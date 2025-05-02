@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold gradient-text">OG</span>
+          <span className="text-2xl font-bold gradient-text">OS</span>
         </Link>
 
         {/* Desktop Navigation */}

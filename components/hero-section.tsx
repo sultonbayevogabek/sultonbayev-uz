@@ -11,8 +11,8 @@ export function HeroSection() {
           {/* Profile Image */}
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
             <Image
-              src="/placeholder.svg?height=400&width=400"
-              alt="Ogabek Sultonbayev"
+              src="/avatar.jpg?height=400&width=400"
+              alt="Og'abek Sultonbayev"
               width={160}
               height={160}
               className="w-full h-full object-cover"
@@ -21,7 +21,7 @@ export function HeroSection() {
 
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Hi, I'm <span className="gradient-text">Ogabek Sultonbayev</span>
+              Hi, I'm <span className="gradient-text">Og'abek Sultonbayev</span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
               Frontend Developer specializing in creating beautiful, responsive, and user-friendly web applications.

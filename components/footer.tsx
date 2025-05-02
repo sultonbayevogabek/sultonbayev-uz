@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Ogabek Sultonbayev</h3>
+            <h3 className="text-lg font-semibold mb-4">Og'abek Sultonbayev</h3>
             <p className="text-muted-foreground mb-4">
               Frontend developer specializing in modern web technologies and creating beautiful user experiences.
             </p>
