@@ -107,29 +107,21 @@ export const workExperience: WorkExperience[] = [
 
 export const education: Education[] = [
    {
-      institution: 'Tashkent University of Information Technologies',
-      degree: 'Bachelor of Science in Computer Science',
+      institution: 'Tashkent State Transport University',
+      degree: 'Bachelor’s Degree in Computer Science and Information Technology',
       location: 'Tashkent, Uzbekistan',
-      startDate: '2015-09-01',
-      endDate: '2019-06-30',
-      description: 'Focused on software engineering, web development, and database management. Graduated with honors.'
+      startDate: '2018-09-03',
+      endDate: '2022-06-21',
+      description: 'Studied software development, computer systems, and modern information technologies with a focus on practical and theoretical computing skills.'
    },
    {
-      institution: 'Frontend Masters',
-      degree: 'Advanced Angular Certification',
-      location: 'Online',
-      startDate: '2021-03-01',
-      endDate: '2021-06-30',
+      institution: 'Pitnak Vocational College of Transport',
+      degree: 'Technical Mechanic in Car Assembly and Testing',
+      location: 'Pitnak, Uzbekistan',
+      startDate: '2015-09-02',
+      endDate: '2018-06-17',
       description:
-         'Comprehensive program covering advanced Angular concepts, state management, and performance optimization.'
-   },
-   {
-      institution: 'Google',
-      degree: 'Mobile Web Specialist Certification',
-      location: 'Online',
-      startDate: '2020-01-15',
-      endDate: '2020-03-20',
-      description: 'Certification focused on creating responsive and accessible web applications for various devices.'
+         'Focused on automobile mechanics, including assembly techniques, diagnostics, and testing procedures of automotive systems.'
    }
 ];
 
