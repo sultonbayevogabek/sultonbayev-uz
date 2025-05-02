@@ -23,7 +23,7 @@ export function SkillsSection() {
             My <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-muted-foreground max-w-[700px]">
-            I specialize in these technologies to create modern, responsive, and user-friendly web applications.
+            I specialize in these technologies to create modern, responsive and user-friendly web applications.
           </p>
         </div>
 

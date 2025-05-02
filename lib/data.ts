@@ -66,12 +66,12 @@ export const workExperience: WorkExperience[] = [
       description: [
          'Played a key role in the development and maintenance of large-scale web applications for government organizations',
          'Specialized in building and supporting electronic document management systems used by civil servants across various state institutions',
-         'Leveraged Angular, SCSS, and Angular Material to create complex, responsive, and scalable user interfaces',
+         'Leveraged Angular, SCSS, and Angular Material to create complex, responsive and scalable user interfaces',
          'Collaborated closely with cross-functional teams to implement new features, fix bugs, and ensure high performance and maintainability',
          'Gained extensive experience in developing enterprise-level frontend systems and solving real-world technical challenges',
          'Contributed to improving internal development standards and mentoring junior developers when necessary'
       ],
-      technologies: [ 'Angular', 'RxJS', 'TypeScript', 'SCSS', 'Angular Material', 'RxJS' ]
+      technologies: [ 'Angular', 'RxJS', 'TypeScript', 'SCSS', 'Angular Material' ]
    },
    {
       title: 'Middle Angular Developer',

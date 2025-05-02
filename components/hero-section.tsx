@@ -24,7 +24,7 @@ export function HeroSection() {
               Hi, I'm <span className="gradient-text">Og'abek Sultonbayev</span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              Frontend Developer specializing in creating beautiful, responsive, and user-friendly web applications.
+              Frontend Developer specializing in creating beautiful, responsive and user-friendly web applications.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 min-[400px]:flex-row">
@@ -38,10 +38,10 @@ export function HeroSection() {
             </Button>
           </div>
           <div className="flex gap-4 mt-6">
-            <Link href="https://github.com/sultonbayevogabek" target="_blank" rel="noopener noreferrer">
+            <Link href="https://t.me/sultonbayevogabek" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <Send className="h-5 w-5" />
+                <span className="sr-only">Telegram</span>
               </Button>
             </Link>
             <Link href="mailto:sultonbayevogabek@gmail.com">
@@ -50,10 +50,10 @@ export function HeroSection() {
                 <span className="sr-only">Email</span>
               </Button>
             </Link>
-            <Link href="https://t.me/sultonbayevogabek" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/sultonbayevogabek" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
-                <Send className="h-5 w-5" />
-                <span className="sr-only">Telegram</span>
+                <Github className="h-5 w-5" />
+                <span className="sr-only">GitHub</span>
               </Button>
             </Link>
           </div>

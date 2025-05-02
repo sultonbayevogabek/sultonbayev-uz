@@ -49,23 +49,23 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+998-97-199-97-73</span>
+                <span>+99897-199-97-73</span>
+              </li>
+              <li className="flex items-center gap-2 text-muted-foreground">
+                <Send className="h-4 w-4" />
+                <a
+                   href="https://t.me/sultonbayevogabek"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="hover:text-primary transition-colors"
+                >
+                  @sultonbayevogabek
+                </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
                 <a href="mailto:sultonbayevogabek@gmail.com" className="hover:text-primary transition-colors">
                   sultonbayevogabek@gmail.com
-                </a>
-              </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <Send className="h-4 w-4" />
-                <a
-                  href="https://t.me/sultonbayevogabek"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  @sultonbayevogabek
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Ogabek Sultonbayev. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Og'abek Sultonbayev. All rights reserved.</p>
         </div>
       </div>
     </footer>

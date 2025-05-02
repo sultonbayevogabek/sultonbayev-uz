@@ -9,7 +9,7 @@ export function EducationSection() {
           <h2 className="text-3xl font-bold tracking-tighter">
             <span className="gradient-text">Education</span>
           </h2>
-          <p className="text-muted-foreground max-w-[700px]">My academic background and professional certifications.</p>
+          <p className="text-muted-foreground max-w-[700px]">My academic background.</p>
         </div>
 
         <div className="max-w-3xl mx-auto">
