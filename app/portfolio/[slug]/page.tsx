@@ -110,6 +110,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                   </div>
                 </div>
 
+                <div>
+                  <h3 className="text-lg font-semibold mb-3">Project Type</h3>
+                  <span className="inline-block bg-primary/10 text-primary dark:bg-primary/20 px-3 py-1 rounded-full text-sm">
+                    {project.type}
+                  </span>
+                </div>
+
                 <div className="space-y-3">
                   {project.demoUrl && (
                     <Button asChild className="w-full gradient-bg">

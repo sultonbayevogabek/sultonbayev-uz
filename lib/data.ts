@@ -12,6 +12,7 @@ export interface Project {
   demoUrl?: string
   githubUrl?: string
   features: string[]
+  type: string // Add this line
 }
 
 export interface BlogPost {
@@ -268,6 +269,7 @@ export const projects: Project[] = [
       "Customer management",
       "Responsive design for all devices",
     ],
+    type: "Multipage Application",
   },
   {
     id: 2,
@@ -287,6 +289,7 @@ export const projects: Project[] = [
       "Social interactions (comments, likes)",
       "User profiles",
     ],
+    type: "Multipage Application",
   },
   {
     id: 3,
@@ -306,6 +309,7 @@ export const projects: Project[] = [
       "Goal setting",
       "Customizable dashboard",
     ],
+    type: "Single Page Application",
   },
   {
     id: 4,
@@ -325,6 +329,47 @@ export const projects: Project[] = [
       "Saved favorites",
       "Contact forms for inquiries",
     ],
+    type: "Multipage Application",
+  },
+  {
+    id: 5,
+    title: "Webinar Landing Page",
+    slug: "webinar-landing-page",
+    description: "A high-converting landing page for a tech webinar with registration form and countdown timer.",
+    longDescription:
+      "This webinar landing page was designed to maximize registrations for a tech industry webinar. It features a clean, focused design with clear calls to action, speaker information, agenda details, and a simple registration form. The page includes a countdown timer to create urgency and social proof elements to increase conversions.",
+    image: "/placeholder.svg?height=600&width=1200",
+    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    demoUrl: "https://webinar-landing.example.com",
+    githubUrl: "https://github.com/sultonbayevogabek/webinar-landing",
+    features: [
+      "Responsive design",
+      "Registration form with validation",
+      "Countdown timer",
+      "Speaker profiles",
+      "Agenda section",
+    ],
+    type: "Landing Page",
+  },
+  {
+    id: 6,
+    title: "Product Showcase",
+    slug: "product-showcase",
+    description: "An interactive product showcase page with 3D visualization and detailed specifications.",
+    longDescription:
+      "This product showcase page provides an immersive experience for users to explore a new tech product. It features interactive elements, smooth animations, and detailed product specifications. The page is designed to highlight the product's features and benefits in an engaging way that encourages conversions.",
+    image: "/placeholder.svg?height=600&width=1200",
+    technologies: ["HTML", "SCSS", "JavaScript", "Three.js"],
+    demoUrl: "https://product-showcase.example.com",
+    githubUrl: "https://github.com/sultonbayevogabek/product-showcase",
+    features: [
+      "Interactive 3D product visualization",
+      "Animated feature highlights",
+      "Technical specifications",
+      "Customer testimonials",
+      "Call-to-action buttons",
+    ],
+    type: "Landing Page",
   },
 ]
 

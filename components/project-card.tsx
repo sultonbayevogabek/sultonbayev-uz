@@ -28,6 +28,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-md hover:scale-[1.02] gradient-border">
         <div className="aspect-video relative overflow-hidden">
           <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+          <div className="absolute top-2 right-2">
+            <span className="bg-primary/90 text-primary-foreground text-xs px-2 py-1 rounded-full">{project.type}</span>
+          </div>
         </div>
         <CardContent className="p-4">
           <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
