@@ -1,387 +1,388 @@
-import type { LucideIcon } from "lucide-react"
-import { Code, Paintbrush, Smartphone, Laptop, Wrench, Globe } from "lucide-react"
+import type { LucideIcon } from 'lucide-react';
+import { Code, Globe, Laptop, Paintbrush, Smartphone, Wrench } from 'lucide-react';
 
 export interface Project {
-  id: number
-  title: string
-  slug: string
-  description: string
-  longDescription: string
-  image: string
-  technologies: string[]
-  demoUrl?: string
-  githubUrl?: string
-  features: string[]
-  type: string // Add this line
+   id: number;
+   title: string;
+   slug: string;
+   description: string;
+   longDescription: string;
+   image: string;
+   technologies: string[];
+   demoUrl?: string;
+   githubUrl?: string;
+   features: string[];
+   type: string; // Add this line
 }
 
 export interface BlogPost {
-  id: number
-  title: string
-  slug: string
-  date: string
-  image: string
-  excerpt: string
-  content: string
+   id: number;
+   title: string;
+   slug: string;
+   date: string;
+   image: string;
+   excerpt: string;
+   content: string;
 }
 
 export interface Service {
-  id: number
-  title: string
-  description: string
-  price: {
-    amount: number
-    startingFrom?: boolean
-    per?: string
-  }
-  icon: LucideIcon
-  features: string[]
+   id: number;
+   title: string;
+   description: string;
+   price: {
+      amount: number
+      startingFrom?: boolean
+      per?: string
+   };
+   icon: LucideIcon;
+   features: string[];
 }
 
 export interface WorkExperience {
-  title: string
-  company: string
-  location: string
-  startDate: string
-  endDate?: string
-  description: string[]
-  technologies?: string[]
+   title: string;
+   company: string;
+   location: string;
+   startDate: string;
+   endDate?: string;
+   description: string[];
+   technologies?: string[];
 }
 
 export interface Education {
-  institution: string
-  degree: string
-  location: string
-  startDate: string
-  endDate?: string
-  description?: string
+   institution: string;
+   degree: string;
+   location: string;
+   startDate: string;
+   endDate?: string;
+   description?: string;
 }
 
 export const workExperience: WorkExperience[] = [
-  {
-    title: "Senior Frontend Developer",
-    company: "TechVision Solutions",
-    location: "Tashkent, Uzbekistan",
-    startDate: "2022-03-01",
-    description: [
-      "Led a team of 5 frontend developers in building a large-scale e-commerce platform",
-      "Implemented responsive design principles ensuring seamless user experience across all devices",
-      "Reduced page load time by 40% through code optimization and lazy loading techniques",
-      "Collaborated with UX designers to implement intuitive user interfaces",
-      "Mentored junior developers and conducted code reviews",
-    ],
-    technologies: ["Angular", "TypeScript", "SCSS", "Angular Material", "RxJS"],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Innovations",
-    location: "Tashkent, Uzbekistan",
-    startDate: "2020-06-01",
-    endDate: "2022-02-28",
-    description: [
-      "Developed and maintained multiple client-facing web applications",
-      "Created reusable component libraries to improve development efficiency",
-      "Implemented state management solutions for complex application requirements",
-      "Collaborated with backend developers to integrate RESTful APIs",
-      "Participated in daily stand-ups and sprint planning meetings",
-    ],
-    technologies: ["JavaScript", "Angular", "HTML", "CSS", "Tailwind CSS"],
-  },
-  {
-    title: "Junior Web Developer",
-    company: "WebCraft Agency",
-    location: "Tashkent, Uzbekistan",
-    startDate: "2019-01-15",
-    endDate: "2020-05-30",
-    description: [
-      "Assisted in developing responsive websites for various clients",
-      "Converted design mockups into functional web pages",
-      "Fixed bugs and implemented new features for existing websites",
-      "Optimized websites for maximum speed and scalability",
-      "Learned and applied best practices in web development",
-    ],
-    technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
-  },
-]
+   {
+      title: 'Senior Frontend Developer',
+      company: 'Unicon Soft LLC',
+      location: 'Tashkent, Uzbekistan',
+      startDate: '2022-09-01',
+      description: [
+         'Played a key role in the development and maintenance of large-scale web applications for government organizations',
+         'Specialized in building and supporting electronic document management systems used by civil servants across various state institutions',
+         'Leveraged Angular, SCSS, and Angular Material to create complex, responsive, and scalable user interfaces',
+         'Collaborated closely with cross-functional teams to implement new features, fix bugs, and ensure high performance and maintainability',
+         'Gained extensive experience in developing enterprise-level frontend systems and solving real-world technical challenges',
+         'Contributed to improving internal development standards and mentoring junior developers when necessary'
+      ],
+      technologies: [ 'Angular', 'RxJS', 'TypeScript', 'SCSS', 'Angular Material', 'RxJS' ]
+   },
+   {
+      title: 'Middle Angular Developer',
+      company: 'Axon Logic LLC',
+      location: 'Tashkent, Uzbekistan',
+      startDate: '2021-12-06',
+      endDate: '2022-08-31',
+      description: [
+         'Contributed to the development of multiple web applications for Uzbekistan Railways, participating in real-world projects under the supervision of senior developers',
+         'Utilized Angular, Bootstrap, NgBootstrap, and SCSS to build responsive and user-friendly interfaces',
+         'Gained valuable experience in enterprise-level frontend development, code structure, and component-based architecture',
+         'Collaborated with the team to debug, optimize, and maintain web applications to ensure high performance and stability',
+         'Followed best practices in frontend development and improved technical skills through daily coding and project involvement'
+      ],
+      technologies: [ 'Angular', 'NgBootstrap', 'TypeScript', 'RxJS', 'Bootstrap',  'SCSS' ]
+   },
+   {
+      title: 'Frontend Programming Instructor',
+      company: 'Fulfil Education',
+      location: 'Tashkent, Uzbekistan',
+      startDate: '2020-02-01',
+      endDate: '2022-05-30',
+      description: [
+         'Delivered online frontend development courses to beginner and intermediate-level students, focusing on core web technologies such as HTML, CSS, SCSS, Bootstrap, JavaScript, and Webpack',
+         'Developed and maintained structured course materials and hands-on coding assignments to facilitate interactive learning',
+         'Guided students through practical projects, helping them build fully functional responsive websites',
+         'Provided one-on-one mentorship, answered technical questions, and offered career guidance to aspiring developers',
+         'Continuously updated the curriculum based on industry trends to ensure relevance and quality of education'
+      ],
+      technologies: [ 'HTML', 'CSS', 'SCSS', 'JavaScript', 'Bootstrap', 'Webpack' ]
+   }
+];
 
 export const education: Education[] = [
-  {
-    institution: "Tashkent University of Information Technologies",
-    degree: "Bachelor of Science in Computer Science",
-    location: "Tashkent, Uzbekistan",
-    startDate: "2015-09-01",
-    endDate: "2019-06-30",
-    description: "Focused on software engineering, web development, and database management. Graduated with honors.",
-  },
-  {
-    institution: "Frontend Masters",
-    degree: "Advanced Angular Certification",
-    location: "Online",
-    startDate: "2021-03-01",
-    endDate: "2021-06-30",
-    description:
-      "Comprehensive program covering advanced Angular concepts, state management, and performance optimization.",
-  },
-  {
-    institution: "Google",
-    degree: "Mobile Web Specialist Certification",
-    location: "Online",
-    startDate: "2020-01-15",
-    endDate: "2020-03-20",
-    description: "Certification focused on creating responsive and accessible web applications for various devices.",
-  },
-]
+   {
+      institution: 'Tashkent University of Information Technologies',
+      degree: 'Bachelor of Science in Computer Science',
+      location: 'Tashkent, Uzbekistan',
+      startDate: '2015-09-01',
+      endDate: '2019-06-30',
+      description: 'Focused on software engineering, web development, and database management. Graduated with honors.'
+   },
+   {
+      institution: 'Frontend Masters',
+      degree: 'Advanced Angular Certification',
+      location: 'Online',
+      startDate: '2021-03-01',
+      endDate: '2021-06-30',
+      description:
+         'Comprehensive program covering advanced Angular concepts, state management, and performance optimization.'
+   },
+   {
+      institution: 'Google',
+      degree: 'Mobile Web Specialist Certification',
+      location: 'Online',
+      startDate: '2020-01-15',
+      endDate: '2020-03-20',
+      description: 'Certification focused on creating responsive and accessible web applications for various devices.'
+   }
+];
 
 export const services: Service[] = [
-  {
-    id: 1,
-    title: "Website Development",
-    description: "Custom website development with modern technologies and responsive design.",
-    price: {
-      amount: 1200,
-      startingFrom: true,
-    },
-    icon: Globe,
-    features: [
-      "Custom design and development",
-      "Responsive for all devices",
-      "SEO-friendly structure",
-      "Up to 5 pages",
-      "Contact form integration",
-      "Basic SEO setup",
-      "2 rounds of revisions",
-    ],
-  },
-  {
-    id: 2,
-    title: "UI/UX Design",
-    description: "Professional user interface and experience design for web applications.",
-    price: {
-      amount: 800,
-      startingFrom: true,
-    },
-    icon: Paintbrush,
-    features: [
-      "User research and analysis",
-      "Wireframing and prototyping",
-      "Interactive mockups",
-      "User flow optimization",
-      "Responsive design",
-      "Design system creation",
-      "3 rounds of revisions",
-    ],
-  },
-  {
-    id: 3,
-    title: "Frontend Development",
-    description: "Implementation of modern, responsive frontend with Angular or other frameworks.",
-    price: {
-      amount: 30,
-      per: "hour",
-    },
-    icon: Code,
-    features: [
-      "Angular/React/Vue implementation",
-      "Responsive layouts",
-      "Cross-browser compatibility",
-      "Performance optimization",
-      "Component-based architecture",
-      "Integration with APIs",
-      "Code documentation",
-    ],
-  },
-  {
-    id: 4,
-    title: "Web Application",
-    description: "Full-featured web application development with frontend and backend integration.",
-    price: {
-      amount: 3500,
-      startingFrom: true,
-    },
-    icon: Laptop,
-    features: [
-      "Custom web application",
-      "User authentication",
-      "Database integration",
-      "API development",
-      "Frontend implementation",
-      "Admin dashboard",
-      "1 month of support",
-    ],
-  },
-  {
-    id: 5,
-    title: "Responsive Design",
-    description: "Make your existing website fully responsive across all devices and screen sizes.",
-    price: {
-      amount: 600,
-      startingFrom: true,
-    },
-    icon: Smartphone,
-    features: [
-      "Mobile-first approach",
-      "Tablet and desktop optimization",
-      "Cross-browser testing",
-      "Performance optimization",
-      "Accessibility improvements",
-      "CSS framework implementation",
-      "1 week of support",
-    ],
-  },
-  {
-    id: 6,
-    title: "Website Maintenance",
-    description: "Ongoing maintenance and support for your website or web application.",
-    price: {
-      amount: 300,
-      per: "month",
-    },
-    icon: Wrench,
-    features: [
-      "Regular updates and backups",
-      "Security monitoring",
-      "Bug fixes and troubleshooting",
-      "Performance optimization",
-      "Content updates (2 hours/month)",
-      "Technical support",
-      "Monthly reporting",
-    ],
-  },
-]
+   {
+      id: 1,
+      title: 'Website Development',
+      description: 'Custom website development with modern technologies and responsive design.',
+      price: {
+         amount: 1200,
+         startingFrom: true
+      },
+      icon: Globe,
+      features: [
+         'Custom design and development',
+         'Responsive for all devices',
+         'SEO-friendly structure',
+         'Up to 5 pages',
+         'Contact form integration',
+         'Basic SEO setup',
+         '2 rounds of revisions'
+      ]
+   },
+   {
+      id: 2,
+      title: 'UI/UX Design',
+      description: 'Professional user interface and experience design for web applications.',
+      price: {
+         amount: 800,
+         startingFrom: true
+      },
+      icon: Paintbrush,
+      features: [
+         'User research and analysis',
+         'Wireframing and prototyping',
+         'Interactive mockups',
+         'User flow optimization',
+         'Responsive design',
+         'Design system creation',
+         '3 rounds of revisions'
+      ]
+   },
+   {
+      id: 3,
+      title: 'Frontend Development',
+      description: 'Implementation of modern, responsive frontend with Angular or other frameworks.',
+      price: {
+         amount: 30,
+         per: 'hour'
+      },
+      icon: Code,
+      features: [
+         'Angular/React/Vue implementation',
+         'Responsive layouts',
+         'Cross-browser compatibility',
+         'Performance optimization',
+         'Component-based architecture',
+         'Integration with APIs',
+         'Code documentation'
+      ]
+   },
+   {
+      id: 4,
+      title: 'Web Application',
+      description: 'Full-featured web application development with frontend and backend integration.',
+      price: {
+         amount: 3500,
+         startingFrom: true
+      },
+      icon: Laptop,
+      features: [
+         'Custom web application',
+         'User authentication',
+         'Database integration',
+         'API development',
+         'Frontend implementation',
+         'Admin dashboard',
+         '1 month of support'
+      ]
+   },
+   {
+      id: 5,
+      title: 'Responsive Design',
+      description: 'Make your existing website fully responsive across all devices and screen sizes.',
+      price: {
+         amount: 600,
+         startingFrom: true
+      },
+      icon: Smartphone,
+      features: [
+         'Mobile-first approach',
+         'Tablet and desktop optimization',
+         'Cross-browser testing',
+         'Performance optimization',
+         'Accessibility improvements',
+         'CSS framework implementation',
+         '1 week of support'
+      ]
+   },
+   {
+      id: 6,
+      title: 'Website Maintenance',
+      description: 'Ongoing maintenance and support for your website or web application.',
+      price: {
+         amount: 300,
+         per: 'month'
+      },
+      icon: Wrench,
+      features: [
+         'Regular updates and backups',
+         'Security monitoring',
+         'Bug fixes and troubleshooting',
+         'Performance optimization',
+         'Content updates (2 hours/month)',
+         'Technical support',
+         'Monthly reporting'
+      ]
+   }
+];
 
 export const projects: Project[] = [
-  {
-    id: 1,
-    title: "E-commerce Dashboard",
-    slug: "e-commerce-dashboard",
-    description:
-      "A comprehensive dashboard for managing an e-commerce platform with analytics and inventory management.",
-    longDescription:
-      "This e-commerce dashboard provides a comprehensive solution for online store management. It features real-time analytics, inventory tracking, order management, and customer insights. The dashboard is built with Angular and uses Angular Material for the UI components, providing a consistent and responsive user experience across devices.",
-    image: "/placeholder.svg?height=600&width=1200",
-    technologies: ["Angular", "TypeScript", "Angular Material", "SCSS", "Chart.js"],
-    demoUrl: "https://demo-ecommerce.example.com",
-    githubUrl: "https://github.com/sultonbayevogabek/ecommerce-dashboard",
-    features: [
-      "Real-time sales analytics",
-      "Inventory management",
-      "Order processing",
-      "Customer management",
-      "Responsive design for all devices",
-    ],
-    type: "Multipage Application",
-  },
-  {
-    id: 2,
-    title: "Travel Blog Platform",
-    slug: "travel-blog-platform",
-    description: "A platform for travel enthusiasts to share their experiences and connect with fellow travelers.",
-    longDescription:
-      "The Travel Blog Platform is a social media application designed specifically for travelers. Users can create accounts, share their travel experiences through blog posts with images, follow other travelers, and interact through comments and likes. The platform features a responsive design and was built using Angular with a focus on performance and user experience.",
-    image: "/placeholder.svg?height=600&width=1200",
-    technologies: ["Angular", "JavaScript", "Tailwind CSS", "Firebase"],
-    demoUrl: "https://travel-blog.example.com",
-    githubUrl: "https://github.com/sultonbayevogabek/travel-blog",
-    features: [
-      "User authentication",
-      "Blog post creation with rich text editor",
-      "Image uploads",
-      "Social interactions (comments, likes)",
-      "User profiles",
-    ],
-    type: "Multipage Application",
-  },
-  {
-    id: 3,
-    title: "Fitness Tracker App",
-    slug: "fitness-tracker-app",
-    description: "A web application for tracking workouts, nutrition, and fitness progress with visualizations.",
-    longDescription:
-      "The Fitness Tracker App helps users monitor their fitness journey by tracking workouts, nutrition, and overall progress. It provides visual representations of data through charts and graphs, allowing users to set goals and track their achievements. The app features a clean, intuitive interface built with Angular and styled with SCSS for a customized look and feel.",
-    image: "/placeholder.svg?height=600&width=1200",
-    technologies: ["Angular", "TypeScript", "SCSS", "D3.js"],
-    demoUrl: "https://fitness-tracker.example.com",
-    githubUrl: "https://github.com/sultonbayevogabek/fitness-tracker",
-    features: [
-      "Workout logging and tracking",
-      "Nutrition diary",
-      "Progress visualization",
-      "Goal setting",
-      "Customizable dashboard",
-    ],
-    type: "Single Page Application",
-  },
-  {
-    id: 4,
-    title: "Real Estate Listing Portal",
-    slug: "real-estate-listing-portal",
-    description: "A modern real estate platform for property listings with advanced search and filtering capabilities.",
-    longDescription:
-      "This Real Estate Listing Portal provides a comprehensive solution for property buyers, sellers, and agents. It features advanced search and filtering options, detailed property listings with high-quality images, virtual tours, and neighborhood information. Built with Angular and Tailwind CSS, the portal offers a responsive and intuitive user interface that works seamlessly across all devices.",
-    image: "/placeholder.svg?height=600&width=1200",
-    technologies: ["Angular", "JavaScript", "Tailwind CSS", "Google Maps API"],
-    demoUrl: "https://realestate.example.com",
-    githubUrl: "https://github.com/sultonbayevogabek/real-estate-portal",
-    features: [
-      "Advanced property search",
-      "Interactive map view",
-      "Virtual property tours",
-      "Saved favorites",
-      "Contact forms for inquiries",
-    ],
-    type: "Multipage Application",
-  },
-  {
-    id: 5,
-    title: "Webinar Landing Page",
-    slug: "webinar-landing-page",
-    description: "A high-converting landing page for a tech webinar with registration form and countdown timer.",
-    longDescription:
-      "This webinar landing page was designed to maximize registrations for a tech industry webinar. It features a clean, focused design with clear calls to action, speaker information, agenda details, and a simple registration form. The page includes a countdown timer to create urgency and social proof elements to increase conversions.",
-    image: "/placeholder.svg?height=600&width=1200",
-    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    demoUrl: "https://webinar-landing.example.com",
-    githubUrl: "https://github.com/sultonbayevogabek/webinar-landing",
-    features: [
-      "Responsive design",
-      "Registration form with validation",
-      "Countdown timer",
-      "Speaker profiles",
-      "Agenda section",
-    ],
-    type: "Landing Page",
-  },
-  {
-    id: 6,
-    title: "Product Showcase",
-    slug: "product-showcase",
-    description: "An interactive product showcase page with 3D visualization and detailed specifications.",
-    longDescription:
-      "This product showcase page provides an immersive experience for users to explore a new tech product. It features interactive elements, smooth animations, and detailed product specifications. The page is designed to highlight the product's features and benefits in an engaging way that encourages conversions.",
-    image: "/placeholder.svg?height=600&width=1200",
-    technologies: ["HTML", "SCSS", "JavaScript", "Three.js"],
-    demoUrl: "https://product-showcase.example.com",
-    githubUrl: "https://github.com/sultonbayevogabek/product-showcase",
-    features: [
-      "Interactive 3D product visualization",
-      "Animated feature highlights",
-      "Technical specifications",
-      "Customer testimonials",
-      "Call-to-action buttons",
-    ],
-    type: "Landing Page",
-  },
-]
+   {
+      id: 1,
+      title: 'E-commerce Dashboard',
+      slug: 'e-commerce-dashboard',
+      description:
+         'A comprehensive dashboard for managing an e-commerce platform with analytics and inventory management.',
+      longDescription:
+         'This e-commerce dashboard provides a comprehensive solution for online store management. It features real-time analytics, inventory tracking, order management, and customer insights. The dashboard is built with Angular and uses Angular Material for the UI components, providing a consistent and responsive user experience across devices.',
+      image: '/placeholder.svg?height=600&width=1200',
+      technologies: [ 'Angular', 'TypeScript', 'Angular Material', 'SCSS', 'Chart.js' ],
+      demoUrl: 'https://demo-ecommerce.example.com',
+      githubUrl: 'https://github.com/sultonbayevogabek/ecommerce-dashboard',
+      features: [
+         'Real-time sales analytics',
+         'Inventory management',
+         'Order processing',
+         'Customer management',
+         'Responsive design for all devices'
+      ],
+      type: 'Multipage Application'
+   },
+   {
+      id: 2,
+      title: 'Travel Blog Platform',
+      slug: 'travel-blog-platform',
+      description: 'A platform for travel enthusiasts to share their experiences and connect with fellow travelers.',
+      longDescription:
+         'The Travel Blog Platform is a social media application designed specifically for travelers. Users can create accounts, share their travel experiences through blog posts with images, follow other travelers, and interact through comments and likes. The platform features a responsive design and was built using Angular with a focus on performance and user experience.',
+      image: '/placeholder.svg?height=600&width=1200',
+      technologies: [ 'Angular', 'JavaScript', 'Tailwind CSS', 'Firebase' ],
+      demoUrl: 'https://travel-blog.example.com',
+      githubUrl: 'https://github.com/sultonbayevogabek/travel-blog',
+      features: [
+         'User authentication',
+         'Blog post creation with rich text editor',
+         'Image uploads',
+         'Social interactions (comments, likes)',
+         'User profiles'
+      ],
+      type: 'Multipage Application'
+   },
+   {
+      id: 3,
+      title: 'Fitness Tracker App',
+      slug: 'fitness-tracker-app',
+      description: 'A web application for tracking workouts, nutrition, and fitness progress with visualizations.',
+      longDescription:
+         'The Fitness Tracker App helps users monitor their fitness journey by tracking workouts, nutrition, and overall progress. It provides visual representations of data through charts and graphs, allowing users to set goals and track their achievements. The app features a clean, intuitive interface built with Angular and styled with SCSS for a customized look and feel.',
+      image: '/placeholder.svg?height=600&width=1200',
+      technologies: [ 'Angular', 'TypeScript', 'SCSS', 'D3.js' ],
+      demoUrl: 'https://fitness-tracker.example.com',
+      githubUrl: 'https://github.com/sultonbayevogabek/fitness-tracker',
+      features: [
+         'Workout logging and tracking',
+         'Nutrition diary',
+         'Progress visualization',
+         'Goal setting',
+         'Customizable dashboard'
+      ],
+      type: 'Single Page Application'
+   },
+   {
+      id: 4,
+      title: 'Real Estate Listing Portal',
+      slug: 'real-estate-listing-portal',
+      description: 'A modern real estate platform for property listings with advanced search and filtering capabilities.',
+      longDescription:
+         'This Real Estate Listing Portal provides a comprehensive solution for property buyers, sellers, and agents. It features advanced search and filtering options, detailed property listings with high-quality images, virtual tours, and neighborhood information. Built with Angular and Tailwind CSS, the portal offers a responsive and intuitive user interface that works seamlessly across all devices.',
+      image: '/placeholder.svg?height=600&width=1200',
+      technologies: [ 'Angular', 'JavaScript', 'Tailwind CSS', 'Google Maps API' ],
+      demoUrl: 'https://realestate.example.com',
+      githubUrl: 'https://github.com/sultonbayevogabek/real-estate-portal',
+      features: [
+         'Advanced property search',
+         'Interactive map view',
+         'Virtual property tours',
+         'Saved favorites',
+         'Contact forms for inquiries'
+      ],
+      type: 'Multipage Application'
+   },
+   {
+      id: 5,
+      title: 'Webinar Landing Page',
+      slug: 'webinar-landing-page',
+      description: 'A high-converting landing page for a tech webinar with registration form and countdown timer.',
+      longDescription:
+         'This webinar landing page was designed to maximize registrations for a tech industry webinar. It features a clean, focused design with clear calls to action, speaker information, agenda details, and a simple registration form. The page includes a countdown timer to create urgency and social proof elements to increase conversions.',
+      image: '/placeholder.svg?height=600&width=1200',
+      technologies: [ 'HTML', 'CSS', 'JavaScript', 'Tailwind CSS' ],
+      demoUrl: 'https://webinar-landing.example.com',
+      githubUrl: 'https://github.com/sultonbayevogabek/webinar-landing',
+      features: [
+         'Responsive design',
+         'Registration form with validation',
+         'Countdown timer',
+         'Speaker profiles',
+         'Agenda section'
+      ],
+      type: 'Landing Page'
+   },
+   {
+      id: 6,
+      title: 'Product Showcase',
+      slug: 'product-showcase',
+      description: 'An interactive product showcase page with 3D visualization and detailed specifications.',
+      longDescription:
+         'This product showcase page provides an immersive experience for users to explore a new tech product. It features interactive elements, smooth animations, and detailed product specifications. The page is designed to highlight the product\'s features and benefits in an engaging way that encourages conversions.',
+      image: '/placeholder.svg?height=600&width=1200',
+      technologies: [ 'HTML', 'SCSS', 'JavaScript', 'Three.js' ],
+      demoUrl: 'https://product-showcase.example.com',
+      githubUrl: 'https://github.com/sultonbayevogabek/product-showcase',
+      features: [
+         'Interactive 3D product visualization',
+         'Animated feature highlights',
+         'Technical specifications',
+         'Customer testimonials',
+         'Call-to-action buttons'
+      ],
+      type: 'Landing Page'
+   }
+];
 
 export const blogPosts: BlogPost[] = [
-  {
-    id: 1,
-    title: "The Evolution of Frontend Development",
-    slug: "evolution-of-frontend-development",
-    date: "2023-05-15",
-    image: "/placeholder.svg?height=600&width=1200",
-    excerpt: "Exploring how frontend development has evolved over the years and what the future holds for developers.",
-    content: `<h1>The Evolution of Frontend Development</h1>
+   {
+      id: 1,
+      title: 'The Evolution of Frontend Development',
+      slug: 'evolution-of-frontend-development',
+      date: '2023-05-15',
+      image: '/placeholder.svg?height=600&width=1200',
+      excerpt: 'Exploring how frontend development has evolved over the years and what the future holds for developers.',
+      content: `<h1>The Evolution of Frontend Development</h1>
 
 <p>Frontend development has come a long way since the early days of the web. From static HTML pages to complex single-page applications, the evolution has been remarkable.</p>
 
@@ -421,16 +422,16 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>As frontend developers, we must continue learning and adapting to these changes to create better web experiences for users.</p>
-    `,
-  },
-  {
-    id: 2,
-    title: "Mastering Angular: Best Practices for Large-Scale Applications",
-    slug: "mastering-angular-best-practices",
-    date: "2023-06-22",
-    image: "/placeholder.svg?height=600&width=1200",
-    excerpt: "Learn how to structure and optimize Angular applications for scalability and maintainability.",
-    content: `<h1>Mastering Angular: Best Practices for Large-Scale Applications</h1>
+    `
+   },
+   {
+      id: 2,
+      title: 'Mastering Angular: Best Practices for Large-Scale Applications',
+      slug: 'mastering-angular-best-practices',
+      date: '2023-06-22',
+      image: '/placeholder.svg?height=600&width=1200',
+      excerpt: 'Learn how to structure and optimize Angular applications for scalability and maintainability.',
+      content: `<h1>Mastering Angular: Best Practices for Large-Scale Applications</h1>
 
 <p>Angular is a powerful framework for building complex web applications, but with great power comes great responsibility. In this post, we'll explore best practices for building large-scale Angular applications that remain maintainable and performant.</p>
 
@@ -490,16 +491,16 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion</h2>
 
 <p>Building large-scale Angular applications requires careful planning and adherence to best practices. By following these guidelines, you can create applications that are not only powerful but also maintainable and scalable.</p>
-    `,
-  },
-  {
-    id: 3,
-    title: "The Power of Tailwind CSS: From Skeptic to Advocate",
-    slug: "power-of-tailwind-css",
-    date: "2023-07-10",
-    image: "/placeholder.svg?height=600&width=1200",
-    excerpt: "My journey from being skeptical about utility-first CSS to becoming a Tailwind CSS advocate.",
-    content: `<h1>The Power of Tailwind CSS: From Skeptic to Advocate</h1>
+    `
+   },
+   {
+      id: 3,
+      title: 'The Power of Tailwind CSS: From Skeptic to Advocate',
+      slug: 'power-of-tailwind-css',
+      date: '2023-07-10',
+      image: '/placeholder.svg?height=600&width=1200',
+      excerpt: 'My journey from being skeptical about utility-first CSS to becoming a Tailwind CSS advocate.',
+      content: `<h1>The Power of Tailwind CSS: From Skeptic to Advocate</h1>
 
 <p>When I first heard about Tailwind CSS, I was skeptical. The idea of cluttering my HTML with utility classes seemed like a step backward. However, after using it on several projects, I've become a strong advocate. Here's why.</p>
 
@@ -550,16 +551,16 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion</h2>
 
 <p>While Tailwind isn't perfect for every project, it has transformed my approach to CSS. The productivity gains and maintainability benefits have made me a convert. If you're still skeptical, I encourage you to try it on a small project and experience the difference yourself.</p>
-    `,
-  },
-  {
-    id: 4,
-    title: "Responsive Design in 2023: Beyond Media Queries",
-    slug: "responsive-design-beyond-media-queries",
-    date: "2023-08-05",
-    image: "/placeholder.svg?height=600&width=1200",
-    excerpt: "Modern approaches to responsive design that go beyond traditional media queries.",
-    content: `<h1>Responsive Design in 2023: Beyond Media Queries</h1>
+    `
+   },
+   {
+      id: 4,
+      title: 'Responsive Design in 2023: Beyond Media Queries',
+      slug: 'responsive-design-beyond-media-queries',
+      date: '2023-08-05',
+      image: '/placeholder.svg?height=600&width=1200',
+      excerpt: 'Modern approaches to responsive design that go beyond traditional media queries.',
+      content: `<h1>Responsive Design in 2023: Beyond Media Queries</h1>
 
 <p>Responsive design has evolved significantly since Ethan Marcotte first coined the term in 2010. While media queries remain important, modern responsive design encompasses much more. Let's explore the current state of responsive design and the tools at our disposal.</p>
 
@@ -621,6 +622,6 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion</h2>
 
 <p>Responsive design in 2023 is about creating experiences that adapt to any context, not just different screen sizes. By leveraging modern CSS, performance techniques, and a broader understanding of user contexts, we can create truly responsive experiences that work for everyone.</p>
-    `,
-  },
-]
+    `
+   }
+];

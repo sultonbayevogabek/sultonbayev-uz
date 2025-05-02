@@ -40,7 +40,7 @@ export function ExperienceItem({
   return (
     <div className="relative pl-8 md:pl-0">
       {/* Timeline connector */}
-      {!isLast && <div className="absolute left-4 top-6 bottom-0 w-px bg-border md:left-1/2 md:-ml-0.5"></div>}
+      <div className="absolute left-4 top-6 bottom-0 w-px bg-border md:left-1/2 md:-ml-0.5"></div>
 
       <div className="md:grid md:grid-cols-2 md:gap-8 items-start">
         {/* Left side - Company and date */}
