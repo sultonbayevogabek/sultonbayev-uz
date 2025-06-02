@@ -8,12 +8,12 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Services", path: "/services" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
-]
+  { name: 'Bosh sahifa', path: '/' },
+  { name: 'Loyihalar', path: '/portfolio' },
+  { name: 'Xizmatlar', path: '/services' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Aloqa', path: '/contact' }
+];
 
 export default function Navbar() {
   const pathname = usePathname()

@@ -21,20 +21,21 @@ export function HeroSection() {
 
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Hi, I'm <span className="gradient-text">Og'abek Sultonbayev</span>
+              Salom, ismim <span className="gradient-text">Og'abek</span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              Frontend Developer specializing in creating beautiful, responsive and user-friendly web applications.
+              Chiroyli, moslashuvchan va foydalanuvchilarga qulay veb-ilovalarni yaratishga ixtisoslashgan Frontend
+              dasturchiman.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 min-[400px]:flex-row">
             <Button asChild className="gradient-bg">
               <Link href="/portfolio">
-                View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                Ishlarimni ko'ring <ArrowRight className="ml-2 h-4 w-4"/>
               </Link>
             </Button>
             <Button asChild variant="outline">
-              <Link href="/contact">Contact Me</Link>
+              <Link href="/contact">Menga bog'laning</Link>
             </Button>
           </div>
           <div className="flex gap-4 mt-6">
@@ -47,7 +48,7 @@ export function HeroSection() {
             <Link href="mailto:sultonbayevogabek@gmail.com">
               <Button variant="ghost" size="icon">
                 <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
+                <span className="sr-only">Elektron pochta</span>
               </Button>
             </Link>
             <Link href="https://github.com/sultonbayevogabek" target="_blank" rel="noopener noreferrer">
