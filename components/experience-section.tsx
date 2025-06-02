@@ -7,10 +7,10 @@ export function ExperienceSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-10">
           <h2 className="text-3xl font-bold tracking-tighter">
-            Work <span className="gradient-text">Experience</span>
+            Ish <span className="gradient-text">tajribam</span>
           </h2>
           <p className="text-muted-foreground max-w-[700px]">
-            My professional journey and the companies I've had the pleasure to work with.
+            Mening kasbiy yo'lim va men ishlagan kompaniyalar.
           </p>
         </div>
 

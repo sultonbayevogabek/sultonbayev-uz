@@ -59,47 +59,47 @@ export interface Education {
 
 export const workExperience: WorkExperience[] = [
    {
-      title: 'Senior Frontend Developer',
+      title: 'Senior Frontend Dasturchi',
       company: 'Unicon Soft LLC',
-      location: 'Tashkent, Uzbekistan',
+      location: 'Toshkent, O\'zbekiston',
       startDate: '2022-09-01',
       description: [
-         'Played a key role in the development and maintenance of large-scale web applications for government organizations',
-         'Specialized in building and supporting electronic document management systems used by civil servants across various state institutions',
-         'Leveraged Angular, SCSS, and Angular Material to create complex, responsive and scalable user interfaces',
-         'Collaborated closely with cross-functional teams to implement new features, fix bugs, and ensure high performance and maintainability',
-         'Gained extensive experience in developing enterprise-level frontend systems and solving real-world technical challenges',
-         'Contributed to improving internal development standards and mentoring junior developers when necessary'
+         'Davlat tashkilotlari uchun katta ko\'lamdagi veb-ilovalarni ishlab chiqish va qo\'llab-quvvatlashda asosiy rol o\'ynadim',
+         'Turli davlat muassasalaridagi davlat xizmatchilari foydalanadigan elektron hujjatlar aylanish tizimlarini yaratish va qo\'llab-quvvatlashga ixtisoslashganman',
+         'Murakkab, moslashuvchan va kengaytirilgan foydalanuvchi interfeyslarini yaratish uchun Angular, SCSS va Angular Materialdan foydalandim',
+         'Yangi funksiyalarni joriy etish, xatolarni tuzatish va yuqori samaradorlik va qo\'llab-quvvatlashni ta\'minlash uchun turli jamoalar bilan yaqindan hamkorlik qildim',
+         'Enterprise darajadagi frontend tizimlarini ishlab chiqish va real texnik muammolarni hal qilishda keng tajriba ortirdim',
+         'Zarur hollarda ichki ishlab chiqish standartlarini yaxshilash va yosh dasturchilarga mentorlikda o\'z hissamni qo\'shdim'
       ],
       technologies: [ 'Angular', 'RxJS', 'TypeScript', 'SCSS', 'Angular Material' ]
    },
    {
-      title: 'Middle Angular Developer',
+      title: 'Middle Angular Dasturchi',
       company: 'Axon Logic LLC',
-      location: 'Tashkent, Uzbekistan',
+      location: 'Toshkent, O\'zbekiston',
       startDate: '2021-12-06',
       endDate: '2022-08-31',
       description: [
-         'Contributed to the development of multiple web applications for Uzbekistan Railways, participating in real-world projects under the supervision of senior developers',
-         'Utilized Angular, Bootstrap, NgBootstrap, and SCSS to build responsive and user-friendly interfaces',
-         'Gained valuable experience in enterprise-level frontend development, code structure, and component-based architecture',
-         'Collaborated with the team to debug, optimize, and maintain web applications to ensure high performance and stability',
-         'Followed best practices in frontend development and improved technical skills through daily coding and project involvement'
+         'O\'zbekiston Temir Yo\'llari uchun bir nechta veb-ilovalarni ishlab chiqishda qatnashdim, katta tajribali dasturchilari nazorati ostida real loyihalarda ishtirok etdim',
+         'Moslashuvchan va foydalanuvchiga qulay interfeyslarni yaratish uchun Angular, Bootstrap, NgBootstrap va SCSSdan foydalandim',
+         'Enterprise darajadagi frontend ishlab chiqish, kod tuzilishi va komponentlarga asoslangan arxitekturada qimmatli tajriba ortirdim',
+         'Yuqori samaradorlik va barqarorlikni ta\'minlash uchun veb-ilovalarni tuzatish, optimallashtirish va qo\'llab-quvvatlash uchun jamoa bilan hamkorlik qildim',
+         'Kundalik kodlash va loyihalarda ishtirok etish orqali frontend ishlab chiqishdagi eng yaxshi amaliyotlarga amal qildim va texnik ko\'nikmalarimni takomillashtirdim'
       ],
-      technologies: [ 'Angular', 'NgBootstrap', 'TypeScript', 'RxJS', 'Bootstrap',  'SCSS' ]
+      technologies: [ 'Angular', 'NgBootstrap', 'TypeScript', 'RxJS', 'Bootstrap', 'SCSS' ]
    },
    {
-      title: 'Frontend Programming Instructor',
+      title: 'Frontend Dasturlash O\'qituvchisi',
       company: 'Fulfil Education',
-      location: 'Tashkent, Uzbekistan',
+      location: 'Toshkent, O\'zbekiston',
       startDate: '2020-02-01',
       endDate: '2022-05-30',
       description: [
-         'Delivered online frontend development courses to beginner and intermediate-level students, focusing on core web technologies such as HTML, CSS, SCSS, Bootstrap, JavaScript, and Webpack',
-         'Developed and maintained structured course materials and hands-on coding assignments to facilitate interactive learning',
-         'Guided students through practical projects, helping them build fully functional responsive websites',
-         'Provided one-on-one mentorship, answered technical questions, and offered career guidance to aspiring developers',
-         'Continuously updated the curriculum based on industry trends to ensure relevance and quality of education'
+         'HTML, CSS, SCSS, Bootstrap, JavaScript va Webpack kabi asosiy veb-texnologiyalarga e\'tibor qaratgan holda boshlang\'ich va o\'rta darajadagi talabalar uchun onlayn frontend dasturlash kurslarini olib bordim',
+         'Interaktiv o\'rganishni osonlashtirish uchun tuzilgan kurs materiallari va amaliy kodlash vazifalarini ishlab chiqdim va qo\'llab-quvvatladim',
+         'Talabalarni amaliy loyihalar orqali olib o\'tib, to\'liq ishlaydigan moslashuvchan veb-saytlar yaratishga yordam berdim',
+         'Bo\'lajak dasturchilarga yakka tartibda mentorlik qildim, texnik savollarga javob berdim va karyera bo\'yicha maslahatlar berdim',
+         'Ta\'lim sifati va dolzarbligini ta\'minlash uchun sanoat tendentsiyalari asosida o\'quv dasturini doimiy yangilab bordim'
       ],
       technologies: [ 'HTML', 'CSS', 'SCSS', 'JavaScript', 'Bootstrap', 'Webpack' ]
    }
