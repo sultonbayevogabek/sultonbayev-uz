@@ -47,8 +47,8 @@ export const workExperience: WorkExperience[] = [
       endDate: '30-may, 2022',
       description: [
          'HTML, CSS, SCSS, Bootstrap, JavaScript va Webpack kabi asosiy veb-texnologiyalarga e\'tibor qaratgan holda boshlang\'ich va o\'rta darajadagi talabalar uchun onlayn frontend dasturlash kurslarini olib bordim',
-         'Interaktiv o\'rganishni osonlashtirish uchun tuzilgan kurs materiallari va amaliy kodlash vazifalarini ishlab chiqdim va qo\'llab-quvvatladim',
-         'Talabalarni amaliy loyihalar orqali olib o\'tib, to\'liq ishlaydigan moslashuvchan veb-saytlar yaratishga yordam berdim',
+         'Interaktiv o\'rganishni osonlashtirish uchun tuzilgan kurs materiallari va amaliy kodlash vazifalarini ishlab chiqdim',
+         'O\'quvhilarga real loyihalardan topshiriqlar berib, to\'liq ishlaydigan moslashuvchan veb-saytlar yaratishga yordam berdim',
          'Bo\'lajak dasturchilarga yakka tartibda mentorlik qildim, texnik savollarga javob berdim va karyera bo\'yicha maslahatlar berdim',
          'Ta\'lim sifati va dolzarbligini ta\'minlash uchun sanoat tendentsiyalari asosida o\'quv dasturini doimiy yangilab bordim'
       ],
