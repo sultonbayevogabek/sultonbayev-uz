@@ -1,5 +1,5 @@
 import { ExperienceItem } from "@/components/experience-item"
-import { workExperience } from "@/lib/data"
+import { workExperience } from "@/lib/work-experience"
 
 export function ExperienceSection() {
   return (

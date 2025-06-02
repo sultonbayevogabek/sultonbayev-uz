@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react"
+import { Briefcase, Building, Calendar } from 'lucide-react';
 import { SkillBadge } from "@/components/skill-badge"
 import { formatDate } from "@/lib/utils"
 import { Code2, FileJson, Palette, Layers, Cpu, LayoutGrid, Boxes } from "lucide-react"
@@ -47,13 +47,13 @@ export function ExperienceItem({
         <div className="mb-4 md:mb-0 md:text-right">
           <div className="flex items-center md:justify-end">
             <div className="absolute left-0 mt-1.5 h-8 w-8 rounded-full border bg-background flex items-center justify-center md:relative md:left-auto md:mt-0 md:ml-4">
-              <Calendar className="h-4 w-4 text-primary" />
+              <Building className="h-4 w-4 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold">{company}</h3>
+            <h3 className="text-lg font-semibold pl-1.5">{company}</h3>
           </div>
           <p className="text-muted-foreground">{location}</p>
           <p className="text-sm text-muted-foreground">
-            {formatDate(startDate)} - {endDate ? formatDate(endDate) : "Present"}
+            {startDate} - {endDate ? endDate : "hozirgacha"}
           </p>
         </div>
 

@@ -38,16 +38,6 @@ export interface Service {
    features: string[];
 }
 
-export interface WorkExperience {
-   title: string;
-   company: string;
-   location: string;
-   startDate: string;
-   endDate?: string;
-   description: string[];
-   technologies?: string[];
-}
-
 export interface Education {
    institution: string;
    degree: string;
@@ -56,54 +46,6 @@ export interface Education {
    endDate?: string;
    description?: string;
 }
-
-export const workExperience: WorkExperience[] = [
-   {
-      title: 'Senior Frontend Dasturchi',
-      company: 'Unicon Soft LLC',
-      location: 'Toshkent, O\'zbekiston',
-      startDate: '2022-09-01',
-      description: [
-         'Davlat tashkilotlari uchun katta ko\'lamdagi veb-ilovalarni ishlab chiqish va qo\'llab-quvvatlashda asosiy rol o\'ynadim',
-         'Turli davlat muassasalaridagi davlat xizmatchilari foydalanadigan elektron hujjatlar aylanish tizimlarini yaratish va qo\'llab-quvvatlashga ixtisoslashganman',
-         'Murakkab, moslashuvchan va kengaytirilgan foydalanuvchi interfeyslarini yaratish uchun Angular, SCSS va Angular Materialdan foydalandim',
-         'Yangi funksiyalarni joriy etish, xatolarni tuzatish va yuqori samaradorlik va qo\'llab-quvvatlashni ta\'minlash uchun turli jamoalar bilan yaqindan hamkorlik qildim',
-         'Enterprise darajadagi frontend tizimlarini ishlab chiqish va real texnik muammolarni hal qilishda keng tajriba ortirdim',
-         'Zarur hollarda ichki ishlab chiqish standartlarini yaxshilash va yosh dasturchilarga mentorlikda o\'z hissamni qo\'shdim'
-      ],
-      technologies: [ 'Angular', 'RxJS', 'TypeScript', 'SCSS', 'Angular Material' ]
-   },
-   {
-      title: 'Middle Angular Dasturchi',
-      company: 'Axon Logic LLC',
-      location: 'Toshkent, O\'zbekiston',
-      startDate: '2021-12-06',
-      endDate: '2022-08-31',
-      description: [
-         'O\'zbekiston Temir Yo\'llari uchun bir nechta veb-ilovalarni ishlab chiqishda qatnashdim, katta tajribali dasturchilari nazorati ostida real loyihalarda ishtirok etdim',
-         'Moslashuvchan va foydalanuvchiga qulay interfeyslarni yaratish uchun Angular, Bootstrap, NgBootstrap va SCSSdan foydalandim',
-         'Enterprise darajadagi frontend ishlab chiqish, kod tuzilishi va komponentlarga asoslangan arxitekturada qimmatli tajriba ortirdim',
-         'Yuqori samaradorlik va barqarorlikni ta\'minlash uchun veb-ilovalarni tuzatish, optimallashtirish va qo\'llab-quvvatlash uchun jamoa bilan hamkorlik qildim',
-         'Kundalik kodlash va loyihalarda ishtirok etish orqali frontend ishlab chiqishdagi eng yaxshi amaliyotlarga amal qildim va texnik ko\'nikmalarimni takomillashtirdim'
-      ],
-      technologies: [ 'Angular', 'NgBootstrap', 'TypeScript', 'RxJS', 'Bootstrap', 'SCSS' ]
-   },
-   {
-      title: 'Frontend Dasturlash O\'qituvchisi',
-      company: 'Fulfil Education',
-      location: 'Toshkent, O\'zbekiston',
-      startDate: '2020-02-01',
-      endDate: '2022-05-30',
-      description: [
-         'HTML, CSS, SCSS, Bootstrap, JavaScript va Webpack kabi asosiy veb-texnologiyalarga e\'tibor qaratgan holda boshlang\'ich va o\'rta darajadagi talabalar uchun onlayn frontend dasturlash kurslarini olib bordim',
-         'Interaktiv o\'rganishni osonlashtirish uchun tuzilgan kurs materiallari va amaliy kodlash vazifalarini ishlab chiqdim va qo\'llab-quvvatladim',
-         'Talabalarni amaliy loyihalar orqali olib o\'tib, to\'liq ishlaydigan moslashuvchan veb-saytlar yaratishga yordam berdim',
-         'Bo\'lajak dasturchilarga yakka tartibda mentorlik qildim, texnik savollarga javob berdim va karyera bo\'yicha maslahatlar berdim',
-         'Ta\'lim sifati va dolzarbligini ta\'minlash uchun sanoat tendentsiyalari asosida o\'quv dasturini doimiy yangilab bordim'
-      ],
-      technologies: [ 'HTML', 'CSS', 'SCSS', 'JavaScript', 'Bootstrap', 'Webpack' ]
-   }
-];
 
 export const education: Education[] = [
    {
