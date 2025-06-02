@@ -10,9 +10,7 @@ export function SkillsSection() {
     { name: "Tailwind CSS", color: "tailwind" as const, icon: LayoutGrid },
     { name: "Angular", color: "angular" as const, icon: Boxes },
     { name: "Angular Material", color: "angular" as const, icon: Layers },
-    { name: "TypeScript", color: "default" as const, icon: Cpu },
-    { name: "Responsive Design", color: "default" as const, icon: Smartphone },
-    { name: "UI/UX", color: "default" as const, icon: PenTool },
+    { name: "TypeScript", color: "default" as const, icon: Cpu }
   ]
 
   return (
@@ -20,10 +18,11 @@ export function SkillsSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-8">
           <h2 className="text-3xl font-bold tracking-tighter">
-            My <span className="gradient-text">Skills</span>
+            Mening <span className="gradient-text">ko'nikmalarim</span>
           </h2>
           <p className="text-muted-foreground max-w-[700px]">
-            I specialize in these technologies to create modern, responsive and user-friendly web applications.
+            Men zamonaviy, moslashuvchan va foydalanuvchilarga qulay veb-ilovalarni yaratish uchun ushbu
+            texnologiyalardan foydalanaman.
           </p>
         </div>
 
