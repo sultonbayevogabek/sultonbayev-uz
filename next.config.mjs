@@ -10,7 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   env: {
-    API_URL: 'http://62.171.170.212:4949/api'
+    API_URL: 'https://bot.farruhzoir.uz/api'
   }
 }
 
