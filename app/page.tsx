@@ -31,10 +31,11 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tighter">
-              Featured <span className="gradient-text">Projects</span>
+              Tanlangan <span className="gradient-text">loyihalar</span>
             </h2>
             <p className="text-muted-foreground max-w-[700px]">
-              Check out some of my recent work. These projects showcase my skills and expertise in frontend development.
+              Mening so'nggi ishlarimni ko'rib chiqing. Ushbu loyihalar frontend dasturlashdagi ko'nikmalarim va
+              tajribamni ko'rsatadi.
             </p>
           </div>
 
