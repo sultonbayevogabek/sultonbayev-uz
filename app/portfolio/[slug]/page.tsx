@@ -1,4 +1,4 @@
-import { projects } from "@/lib/data"
+import { projects } from "@/lib/projects"
 import { SkillBadge } from "@/components/skill-badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"

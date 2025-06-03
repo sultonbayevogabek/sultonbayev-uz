@@ -11,40 +11,65 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: 'HTML markerlash tili',
-    slug: 'html-technology',
+    title: 'Veb-saytning performansi va yuklanish tezligini qanday oshirish mumkin?',
+    slug: 'website-performance-optimization',
     date: '3-iyun, 2025',
-    image: 'https://www.cantech.in/blog/wp-content/uploads/2024/03/What-is-HTML-958x575.webp?height=600&width=1200',
-    excerpt: 'HTML texnologiyasining paydo bo\'lishi va rivojlanish bosqichlari haqida batafsil ma\'lumot.',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?height=600&width=1200',
+    excerpt: 'Veb-saytingizning yuklanish tezligini oshirish va foydalanuvchi tajribasini yaxshilash uchun amaliy maslahatlar va usullar.',
     content: `
-      <h2 class="text-lg mb-2"><strong>HTML texnologiyasining tarixi va rivojlanishi</strong></h2>
-      <p>HTML (HyperText Markup Language) internetning asosiy tili bo'lib, 1990-yillardan buyon veb-sahifalarni yaratishda ishlatib kelinmoqda.</p>
+      <p>Bugungi raqamli dunyoda veb-saytning tez yuklanishi foydalanuvchilar uchun eng muhim omillardan biridir.
+        Tadqiqotlar shuni ko'rsatadiki, agar sayt 3 soniyadan ko'proq yuklanayotgan bo'lsa, foydalanuvchilarning 40% dan ortig'i uni
+        tark etadi. Bu maqolada veb-sayt performansini oshirishning eng samarali usullarini ko'rib chiqamiz.</p>
 
-      <h2>HTMLning yaratilishi</h2>
-      <p>HTML 1991-yilda Tim Berners-Lee tomonidan CERN laboratoriyasida ishlab chiqilgan. Dastlab u olimlar o'rtasida hujjatlarni almashish uchun mo'ljallangan edi.</p>
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Performansning ahamiyati</h2>
+        <p>Veb-sayt tezligi nafaqat foydalanuvchi tajribasiga ta'sir qiladi, balki qidiruv tizimlarida
+        reytingga ham bevosita bog'liq. Google va boshqa qidiruv tizimlari tez yuklanadigan saytlarni
+        yuqori o'rinlarga qo'yadi. Shuningdek, mobil qurilmalarda internetga ulanish tezligi har doim ham yuqori
+        bo'lmasligi sababli, sayt optimizatsiyasi yanada muhim ahamiyat kasb etadi.</p>
+      </div>
 
-      <h2>HTML versiyalarining rivojlanishi</h2>
-      <ul>
-        <li><strong>HTML 1.0</strong> - 1991-yilda yaratilgan ilk versiya</li>
-        <li><strong>HTML 2.0</strong> - 1995-yilda standartlashtirilgan versiya</li>
-        <li><strong>HTML 3.2</strong> - 1997-yilda W3C tomonidan tavsiya etilgan</li>
-        <li><strong>HTML 4.01</strong> - 1999-yilda chiqqan muhim yangilanish</li>
-        <li><strong>XHTML</strong> - 2000-yilda XML qoidalariga asoslangan versiya</li>
-        <li><strong>HTML5</strong> - 2014-yilda rasman tasdiqlangan zamonaviy standart</li>
-      </ul>
+      <div>
+        <h2 class="mb-1 text-xl font-bold">1. Rasmlarni optimizatsiya qilish</h2>
+        <p>Rasmlar ko'pincha veb-sahifaning eng katta qismini tashkil etadi.
+        Ularni to'g'ri optimizatsiya qilish performansni sezilarli darajada oshiradi.</p>
+      </div>
 
-      <h2>HTML5 ning yangi xususiyatlari</h2>
-      <p>HTML5 quyidagi muhim yangiliklar bilan keldi:</p>
-      <ul>
-        <li>Semantik elementlar (<strong>header, footer, nav, article</strong>)</li>
-        <li>Audio va video teglar</li>
-        <li>Canvas elementi orqali grafika yaratish</li>
-        <li>Veb-formalar uchun yangi input turlari</li>
-        <li>Local Storage va Session Storage</li>
-      </ul>
+      <div>
+        <h3 class="mb-1 text-lg font-bold">Formatni to'g'ri tanlash</h3>
+        <ul>
+          <li><strong>- JPEG:</strong> Fotografiyalar va murakkab rasmlar uchun</li>
+          <li><strong>- PNG:</strong> Shaffof fon va oddiy grafikalar uchun</li>
+          <li><strong>- WebP:</strong> Zamonaviy format, JPEG va PNG dan 25-30% kichik</li>
+          <li><strong>- SVG:</strong> Vektor grafikalar uchun</li>
+        </ul>
+      </div>
 
-      <h2>Kelajakdagi rivojlanish</h2>
-      <p>HTML texnologiyasi doimiy ravishda rivojlanmoqda. Hozirda HTML5 ning yangi xususiyatlari va funksiyalari ustida ish olib borilmoqda. Bu esa veb-dasturlash imkoniyatlarini yanada kengaytirmoqda.</p>
+      <div>
+        <h2 class="mb-1 text-lg font-bold">Praktik tavsiyalar</h2>
+        <ul class="pl-3">
+          <li>- Rasmlarni siqish (compression) dan foydalaning</li>
+          <li>- Zamonaviy formatlarni qo'llang (WebP, AVIF)</li>
+          <li>- Lazy loading texnikasini ishlatib, faqat ko'rinadigan rasmlarni yuklang</li>
+          <li>- Responsive images bilan turli ekran o'lchamlari uchun mos rasmlar taqdim eting</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">2. CSS va JavaScript optimizatsiyasi</h2>
+        <p>Rasmlar ko'pincha veb-sahifaning eng katta qismini tashkil etadi.
+        Ularni to'g'ri optimizatsiya qilish performansni sezilarli darajada oshiradi.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Xulosa</h2>
+        <p>Veb-sayt performansini oshirish murakkab jarayon bo'lib, bir nechta yo'nalishda
+        ishlab borish talab etadi. Rasmlarni optimizatsiya qilish, keshdan to'g'ri foydalanish,
+         server sozlamalarini yaxshilash va muntazam monitoring orqali foydalanuvchilar
+         uchun tez va qulay veb-sayt yaratish mumkin.</p>
+         <p>Eng muhimi, bu optimizatsiya ishlarini bosqichma-bosqich amalga oshirish va har bir o'zgarishdan keyin natijalarni o'lchashdir. Shunday qilib, qaysi usullar sizning saytingiz uchun eng samarali ekanligini aniqlash mumkin.</p>
+         <p>Esda tutingki, performans - bu bir martalik ish emas, balki doimiy jarayondir. Texnologiyalar rivojlanishi va foydalanuvchi ehtiyojlari o'zgarishi bilan saytingizni ham yangilab borishingiz kerak.</p>
+      </div>
     `
-  }
+}
 ];

@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { SkillBadge } from "@/components/skill-badge"
 import { Card, CardContent } from "@/components/ui/card"
-import type { Project } from "@/lib/data"
+import type { Project } from "@/lib/projects"
 import { Code2, FileJson, Palette, Layers, Cpu, LayoutGrid, Boxes } from "lucide-react"
 
 interface ProjectCardProps {

@@ -54,7 +54,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           <div className="prose dark:prose-invert max-w-none">
-            <div dangerouslySetInnerHTML={ { __html: post.content } }/>
+            <article className="flex flex-col gap-4 text-justify" dangerouslySetInnerHTML={ { __html: post.content } }/>
           </div>
 
           <div className="mt-12 pt-8 border-t">

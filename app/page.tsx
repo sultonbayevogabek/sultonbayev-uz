@@ -7,7 +7,8 @@ import { BlogCard } from "@/components/blog-card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { projects, blogPosts } from "@/lib/data"
+import { projects } from '@/lib/projects';
+import { blogPosts } from '@/lib/blog-posts';
 
 export default function Home() {
   // Get the latest 3 projects
