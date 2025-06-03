@@ -86,13 +86,13 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="rounded-lg p-8 md:p-12 gradient-bg text-white">
             <div className="flex flex-col items-center text-center space-y-4">
-              <h2 className="text-2xl md:text-3xl font-bold tracking-tighter">Let's Work Together</h2>
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tighter">Hamkorlik qilamiz</h2>
               <p className="max-w-[700px] text-white/90">
-                I'm currently available for freelance projects and full-time positions. If you're interested in working
-                together, get in touch!
+                G'oyalaringiz va biznes loyilaringizni amalga oshirishda yordam berishdan mamnun bo'laman. Hamkorlik
+                qilmoqchi bo'lsangiz, men bilan bog'laning!
               </p>
               <Button asChild variant="secondary" size="lg">
-                <Link href="/contact">Contact Me</Link>
+                <Link href="/contact">Aloqaga chiqing</Link>
               </Button>
             </div>
           </div>

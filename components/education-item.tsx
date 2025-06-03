@@ -32,11 +32,11 @@ export function EducationItem({
             <div className="absolute left-0 mt-1.5 h-8 w-8 rounded-full border bg-background flex items-center justify-center md:relative md:left-auto md:mt-0 md:ml-4">
               <GraduationCap className="h-4 w-4 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold">{institution}</h3>
+            <h3 className="pl-2 text-lg font-semibold">{institution}</h3>
           </div>
           <p className="text-muted-foreground">{location}</p>
           <p className="text-sm text-muted-foreground">
-            {formatDate(startDate)} - {endDate ? formatDate(endDate) : "Present"}
+            {startDate} - {endDate ? endDate : "hozirgacha"}
           </p>
         </div>
 

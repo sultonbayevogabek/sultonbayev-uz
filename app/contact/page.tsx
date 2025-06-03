@@ -14,7 +14,7 @@ export default function ContactPage() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
-    subject: "",
+    tgOrPhone: "",
     message: "",
   })
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
       setFormState({
         name: "",
         email: "",
-        subject: "",
+        tgOrPhone: "",
         message: "",
       })
 
@@ -53,79 +53,80 @@ export default function ContactPage() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Get in <span className="gradient-text">Touch</span>
+            Bog'lanish <span className="gradient-text">uchun</span>
           </h1>
           <p className="text-muted-foreground max-w-[700px] md:text-lg">
-            Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you!
+            Loyiha yoki hamkorlik bo'yicha taklifingiz bormi? Sizni eshitishdan xursandman!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card>
             <CardHeader>
-              <CardTitle>Send Me a Message</CardTitle>
-              <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
+              <CardTitle>Menga xabar yuboring</CardTitle>
+              <CardDescription>Quyidagi formani to'ldiring va men imkon qadar tez sizga aloqaga chiqaman.</CardDescription>
             </CardHeader>
             <CardContent>
-              {isSubmitted ? (
-                <div className="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-300 p-4 rounded-md mb-4">
-                  Thank you for your message! I'll get back to you soon.
+              { isSubmitted ? (
+                <div
+                  className="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-300 p-4 rounded-md mb-4">
+                  Xabaringiz uchun rahmat! Tez orada javob beraman.
                 </div>
-              ) : null}
+              ) : null }
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={ handleSubmit } className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Ism</Label>
                   <Input
                     id="name"
                     name="name"
-                    placeholder="Your name"
+                    placeholder="Ismingiz"
                     required
-                    value={formState.name}
-                    onChange={handleChange}
+                    value={ formState.name }
+                    onChange={ handleChange }
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="tgOrPhone">Telegram yoki telefon raqam</Label>
+                  <Input
+                    id="tgOrPhone"
+                    name="tgOrPhone"
+                    placeholder="Telegram foydalanuvchi nomingiz yoki telefon raqamingiz"
+                    required
+                    value={ formState.tgOrPhone }
+                    onChange={ handleChange }
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email">Elektron pochta</Label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="Your email address"
+                    placeholder="Elektron pochta manzilingiz"
                     required
-                    value={formState.email}
-                    onChange={handleChange}
+                    value={ formState.email }
+                    onChange={ handleChange }
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    placeholder="What is this regarding?"
-                    required
-                    value={formState.subject}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Xabar</Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Your message"
-                    rows={5}
+                    placeholder="Xabaringiz"
+                    rows={ 5 }
                     required
-                    value={formState.message}
-                    onChange={handleChange}
+                    value={ formState.message }
+                    onChange={ handleChange }
                   />
                 </div>
 
-                <Button type="submit" className="w-full gradient-bg" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                <Button type="submit" className="w-full gradient-bg" disabled={ isSubmitting }>
+                  { isSubmitting ? 'Yuborilmoqda...' : 'Xabarni yuborish' }
                 </Button>
               </form>
             </CardContent>
@@ -134,33 +135,25 @@ export default function ContactPage() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
-                <CardDescription>You can also reach me directly using the following contact details.</CardDescription>
+                <CardTitle>Bog'lanish ma'lumotlari</CardTitle>
+                <CardDescription>Quyidagi bog'lanish ma'lumotlari orqali ham menga aloqaga chiqishingiz mumkin.</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-primary mt-0.5" />
+                  <Phone className="h-5 w-5 text-primary mt-0.5"/>
                   <div>
-                    <h3 className="font-medium">Phone</h3>
-                    <p className="text-muted-foreground">+998-97-199-97-73</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
-                    <h3 className="font-medium">Email</h3>
+                    <h3 className="font-medium">Telefon</h3>
                     <a
-                      href="mailto:sultonbayevogabek@gmail.com"
+                      href="tel:+998971999773"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      sultonbayevogabek@gmail.com
+                      +99897-199-97-73
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Send className="h-5 w-5 text-primary mt-0.5" />
+                  <Send className="h-5 w-5 text-primary mt-0.5"/>
                   <div>
                     <h3 className="font-medium">Telegram</h3>
                     <a
@@ -175,7 +168,20 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Github className="h-5 w-5 text-primary mt-0.5" />
+                  <Mail className="h-5 w-5 text-primary mt-0.5"/>
+                  <div>
+                    <h3 className="font-medium">Elektron pochta</h3>
+                    <a
+                      href="mailto:sultonbayevogabek@gmail.com"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      sultonbayevogabek@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Github className="h-5 w-5 text-primary mt-0.5"/>
                   <div>
                     <h3 className="font-medium">GitHub</h3>
                     <a
@@ -193,18 +199,18 @@ export default function ContactPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Let's Connect</CardTitle>
+                <CardTitle>Hamkorlik qilamiz</CardTitle>
                 <CardDescription>
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                  vision.
+                  Men har doim yangi loyihalar, ijodiy g'oyalar yoki loyihangizni rivojlantirish
+                  imkoniyatlarini muhokama qilishga tayyorman.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Whether you're a business looking to create a new website, a developer looking for collaboration, or
-                  just want to say hi, I'd love to hear from you!
+                  Yangi veb-sayt yaratmoqchi bo'lgan biznes vakili, hamkorlikka qiziquvchi dasturchi yoki shunchaki
+                  salom aytmoqchi bo'lsangiz ham, men sizni eshitishdan xursandman!
                 </p>
-                <p className="text-muted-foreground">I typically respond within 24 hours during weekdays.</p>
+                <p className="text-muted-foreground">Xabaringizga 1-2 soat ichida javob beraman.</p>
               </CardContent>
             </Card>
           </div>

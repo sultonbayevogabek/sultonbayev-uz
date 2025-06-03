@@ -38,35 +38,6 @@ export interface Service {
    features: string[];
 }
 
-export interface Education {
-   institution: string;
-   degree: string;
-   location: string;
-   startDate: string;
-   endDate?: string;
-   description?: string;
-}
-
-export const education: Education[] = [
-   {
-      institution: 'Tashkent State Transport University',
-      degree: 'Bachelor’s Degree in Computer Science and Information Technology',
-      location: 'Tashkent, Uzbekistan',
-      startDate: '2018-09-03',
-      endDate: '2022-06-21',
-      description: 'Studied software development, computer systems, and modern information technologies with a focus on practical and theoretical computing skills.'
-   },
-   {
-      institution: 'Pitnak Vocational College of Transport',
-      degree: 'Technical Mechanic in Car Assembly and Testing',
-      location: 'Pitnak, Uzbekistan',
-      startDate: '2015-09-02',
-      endDate: '2018-06-17',
-      description:
-         'Focused on automobile mechanics, including assembly techniques, diagnostics, and testing procedures of automotive systems.'
-   }
-];
-
 export const services: Service[] = [
    {
       id: 1,

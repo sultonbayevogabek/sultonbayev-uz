@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Github, Mail, Phone, Send } from "lucide-react"
+import Link from 'next/link';
+import { Github, Mail, Phone, Send } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,16 +9,17 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Og'abek Sultonbayev</h3>
             <p className="text-muted-foreground mb-4">
-              Frontend developer specializing in modern web technologies and creating beautiful user experiences.
+              Chiroyli, moslashuvchan va foydalanuvchilarga qulay veb-ilovalarni yaratishga ixtisoslashgan Frontend
+              dasturchi.
             </p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Tezkor havolalar</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                  Home
+                  Bosh sahifa
                 </Link>
               </li>
               <li>
@@ -28,7 +29,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Services
+                  Xizmatlar
                 </Link>
               </li>
               <li>
@@ -38,38 +39,40 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                  Aloqa
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">Aloqa</h3>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="h-4 w-4" />
-                <span>+99897-199-97-73</span>
+                <Phone className="h-4 w-4"/>
+                <a href="tel:+998971999773" className="hover:text-primary transition-colors">
+                  +99897-199-97-73
+                </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Send className="h-4 w-4" />
+                <Send className="h-4 w-4"/>
                 <a
-                   href="https://t.me/sultonbayevogabek"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   className="hover:text-primary transition-colors"
+                  href="https://t.me/sultonbayevogabek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
                 >
                   @sultonbayevogabek
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Mail className="h-4 w-4" />
+                <Mail className="h-4 w-4"/>
                 <a href="mailto:sultonbayevogabek@gmail.com" className="hover:text-primary transition-colors">
                   sultonbayevogabek@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
-                <Github className="h-4 w-4" />
+                <Github className="h-4 w-4"/>
                 <a
                   href="https://github.com/sultonbayevogabek"
                   target="_blank"
@@ -84,9 +87,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Og'abek Sultonbayev. All rights reserved.</p>
+          <p>© { new Date().getFullYear() } Og'abek Sultonbayev. Barcha huquqlar himoyalangan.</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
