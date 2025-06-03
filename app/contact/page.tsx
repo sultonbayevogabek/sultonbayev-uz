@@ -11,10 +11,10 @@ import { Github, Mail, Phone, Send } from 'lucide-react';
 
 export default function ContactPage() {
   const [ formState, setFormState ] = useState({
-    name: 'Sattarova Sevara',
-    email: 'sevara@gmail.com',
-    tgOrPhone: '@sevaritto',
-    message: 'Bugun kechki ovqatga nima qilay?'
+    name: '',
+    email: '',
+    tgOrPhone: '',
+    message: ''
   });
 
   const [ isSubmitting, setIsSubmitting ] = useState(false);
