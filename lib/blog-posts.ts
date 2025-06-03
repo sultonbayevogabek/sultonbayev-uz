@@ -411,5 +411,139 @@ export const blogPosts: BlogPost[] = [
         haqiqatan ham eng yaxshi variantlardan biri hisoblanadi.</p>
       </div>
     `
-  }
+  },
+  {
+    id: 4,
+    title: 'Next.js - qachon va nima uchun tanlash kerak?',
+    slug: 'why-choose-nextjs',
+    date: '3-iyun, 2025',
+    image: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?height=600&width=1200',
+    excerpt: 'Next.js frameworkining asosiy afzalliklari, uni qachon ishlatish kerakligi va real loyihalardagi amaliy tajribalar.',
+    content: `
+        <p>Next.js - React asosidagi framework bo'lib, zamonaviy veb-ilovalar yaratish uchun
+        eng mashhur yechimlardan biridir. Bu maqolada Next.js ning asosiy xususiyatlari va
+        uni qaysi hollarda tanlash kerakligi haqida batafsil ma'lumot beramiz.</p>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Next.js nima va uning asosiy xususiyatlari</h2>
+          <p>Next.js quyidagi muhim xususiyatlarni taqdim etadi:</p>
+          <ul class="pl-3">
+            <li>- Server-Side Rendering (SSR)</li>
+            <li>- Static Site Generation (SSG)</li>
+            <li>- Automatic code splitting</li>
+            <li>- Built-in routing</li>
+            <li>- API routes</li>
+            <li>- Zero configuration</li>
+            <li>- Hot Code Reloading</li>
+            <li>- TypeScript support</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Next.js ni qaysi hollarda tanlash kerak?</h2>
+        </div>
+
+        <div>
+          <h3 class="mb-1 text-lg font-bold">1. SEO muhim bo'lgan loyihalar uchun</h3>
+          <p>Next.js ning SSR va SSG imkoniyatlari qidiruv tizimlarida yaxshi natija beradi:</p>
+          <ul class="pl-3">
+            <li>- E-commerce saytlar</li>
+            <li>- Blog platformalari</li>
+            <li>- Marketing saytlari</li>
+            <li>- Korporativ veb-saytlar</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-1 text-lg font-bold">2. Yuqori performance kerak bo'lganda</h3>
+          <ul class="pl-3">
+            <li>- Automatic code splitting</li>
+            <li>- Image optimization</li>
+            <li>- Edge caching</li>
+            <li>- Server-side rendering</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-1 text-lg font-bold">3. Murakkab routing kerak bo'lganda</h3>
+          <ul class="pl-3">
+            <li>- File-system based routing</li>
+            <li>- Dynamic routes</li>
+            <li>- Nested routes</li>
+            <li>- Middleware support</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-1 text-lg font-bold">4. Tez development zarur bo'lganda</h3>
+          <ul class="pl-3">
+            <li>- Zero configuration</li>
+            <li>- Built-in TypeScript support</li>
+            <li>- Fast Refresh</li>
+            <li>- API routes</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Next.js ning kamchiliklari</h2>
+          <ul class="pl-3">
+            <li>- React ga bog'liqlik</li>
+            <li>- Hosting talablari</li>
+            <li>- Bundle size</li>
+            <li>- O'rganish vaqti</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Next.js alternatives</h2>
+          <ul class="pl-3">
+            <li>- Gatsby (static sites uchun)</li>
+            <li>- Nuxt.js (Vue.js ekosistemasi uchun)</li>
+            <li>- Remix (full stack framework)</li>
+            <li>- Create React App (oddiy React apps uchun)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Next.js deployment</h2>
+          <p>Next.js ilovalarini deploy qilish uchun eng yaxshi platformalar:</p>
+          <ul class="pl-3">
+            <li>- Vercel (Next.js yaratuvchilari)</li>
+            <li>- Netlify</li>
+            <li>- AWS Amplify</li>
+            <li>- Digital Ocean</li>
+            <li>- Railway</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Next.js ning kelajagi</h2>
+          <p>Next.js tez rivojlanayotgan framework bo'lib, har yangi versiyada muhim yangiliklar qo'shilmoqda:</p>
+          <ul class="pl-3">
+            <li>- Server Components</li>
+            <li>- Edge Runtime</li>
+            <li>- Turbopack</li>
+            <li>- Middleware improvements</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="mb-1 text-xl font-bold">Xulosa</h2>
+          <p>Next.js quyidagi hollarda eng yaxshi tanlov bo'ladi:</p>
+          <ul class="pl-3 mb-4">
+            <li>- SEO muhim bo'lgan loyihalar</li>
+            <li>- Yuqori performance talab qiladigan ilovalar</li>
+            <li>- Murakkab routing kerak bo'lganda</li>
+            <li>- Enterprise darajadagi loyihalar</li>
+            <li>- Tez development muhim bo'lganda</li>
+          </ul>
+
+          <p>Next.js tanlashdan oldin loyihangizning talablarini yaxshilab o'rganib chiqing.
+          Agar yuqoridagi holatlardan birortasi sizning loyihangizga mos kelsa, Next.js juda yaxshi tanlov bo'lishi mumkin.</p>
+
+          <p>Esda tutingki, framework tanlash - bu muhim qaror, va bu qarorni loyiha
+          talablari, jamoa tajribasi va uzoq muddatli maqsadlarni hisobga olgan holda qabul qilish kerak.</p>
+        </div>
+      `
+  },
 ];
