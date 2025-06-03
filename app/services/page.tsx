@@ -1,5 +1,5 @@
 import { ServiceCard } from "@/components/service-card"
-import { services } from "@/lib/data"
+import { services } from "@/lib/services"
 
 export const metadata = {
   title: "Services | Frontend Developer",

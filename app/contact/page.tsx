@@ -102,11 +102,10 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Elektron pochta</Label>
+                  <Label htmlFor="email">Elektron pochta (ixtiyoriy)</Label>
                   <Input
                     id="email"
                     name="email"
-                    type="email"
                     placeholder="Elektron pochta manzilingiz"
                     value={ formState.email }
                     onChange={ handleChange }
@@ -114,12 +113,13 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Xabar</Label>
+                  <Label htmlFor="message">Xabar (ixtiyoriy)</Label>
                   <Textarea
                     id="message"
                     name="message"
                     placeholder="Xabaringiz"
                     rows={ 5 }
+                    maxLength={ 500 }
                     value={ formState.message }
                     onChange={ handleChange }
                   />

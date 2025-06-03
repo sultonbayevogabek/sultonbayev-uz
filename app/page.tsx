@@ -58,10 +58,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tighter">
-              Latest <span className="gradient-text">Blog Posts</span>
+              Oxirgi <span className="gradient-text">blog postlar</span>
             </h2>
             <p className="text-muted-foreground max-w-[700px]">
-              I write about frontend development, design trends, and my experiences in the tech industry.
+              Men frontend dasturlash va IT sohasidagi tajribalarim haqida yozaman.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="flex justify-center mt-8">
             <Button asChild variant="outline">
               <Link href="/blog">
-                Read All Posts <ArrowRight className="ml-2 h-4 w-4" />
+                Barcha postlarni o'qish <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

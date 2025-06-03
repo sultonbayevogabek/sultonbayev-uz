@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { projects } from "@/lib/data"
+import { projects } from "@/lib/projects"
 import { ProjectCard } from "@/components/project-card"
 import { ProjectFilter } from "@/components/project-filter"
 

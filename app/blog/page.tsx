@@ -1,4 +1,4 @@
-import { blogPosts } from "@/lib/data"
+import { blogPosts } from "@/lib/blog-posts"
 import { BlogCard } from "@/components/blog-card"
 
 export const metadata = {
@@ -12,10 +12,10 @@ export default function BlogPage() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            My <span className="gradient-text">Blog</span>
+            Mening <span className="gradient-text">blogim</span>
           </h1>
           <p className="text-muted-foreground max-w-[700px] md:text-lg">
-            Thoughts, tutorials, and insights on frontend development, design trends, and web technologies.
+            Frontend dasturlash va veb texnologiyalari bo'yicha ma'lumotlar, yangiliklar va tajribalarim.
           </p>
         </div>
 
