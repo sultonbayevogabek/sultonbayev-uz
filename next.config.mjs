@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    API_URL: 'http://localhost:4949/api'
+  }
 }
 
 export default nextConfig
