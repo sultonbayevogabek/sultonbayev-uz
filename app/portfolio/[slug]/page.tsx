@@ -53,7 +53,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             <div className="mt-8 space-y-6">
               <h1 className="text-3xl font-bold">{ project.title }</h1>
 
-              <p className="text-muted-foreground">{ project.longDescription }</p>
+              <p className="text-muted-foreground">{ project.description }</p>
 
               <div>
                 <h3 className="text-lg font-semibold mb-3">Xususiyatlar</h3>
