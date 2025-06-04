@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -62,7 +63,6 @@ export const metadata: Metadata = {
   },
 }
 
-
 export default function RootLayout({
   children,
 }: {
@@ -78,6 +78,21 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-4WWMZTXWBW`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4WWMZTXWBW');
+        `}
+          </Script>
+        </>
       </body>
     </html>
   )
