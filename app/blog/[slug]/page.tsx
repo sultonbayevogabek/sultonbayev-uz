@@ -34,7 +34,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <div className="py-12 md:py-16">
+    <div className="py-8 md:py-16">
       <div className="container px-4 md:px-6">
         <Button asChild variant="ghost" className="mb-8">
           <Link href="/blog">
@@ -45,7 +45,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
         <article className="max-w-3xl mx-auto">
           <div className="mb-8">
-            <h1 className="text-3xl font-bold mb-1">{ post.title }</h1>
+            <h1 className="text-2xl xl:text-3xl font-bold mb-1">{ post.title }</h1>
             <p className="text-muted-foreground">{ post.date }</p>
           </div>
 

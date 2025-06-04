@@ -208,12 +208,20 @@ export const projects: Project[] = [
   },
   {
     id: 9,
-    title: 'Dildora Tursunova Portfolio',
-    slug: 'dildora-portfolio',
-    description: 'A dynamic portfolio website showcasing creative work with stunning animations.',
+    title: 'Dildora Tursunova',
+    slug: 'dildora-tursunova-dynamics-market-uz',
+    description: `
+      Hozirda Uzinfocom'da HR bo'limi rahbari lavozimida ishlayotgan va HR sohasida ko'p yillik tajribaga
+      ega ekspert Dildora Tursunovaning "Qanday qilib aniq formula asosida kuchli va sodiq jamoa qurish
+      mumkin?" nomli oflayn seminari uchun qilingan lending sahifa. <br>
+      Saytni hosting'ga yuklab, performensini tekshirib ko'rganimda juda yomon natija ko'rsatgan (25%😭).
+      Tashkilotchilar sayt yuklanish tezligini oshirib berishimni so'rashgan. Keyin "lazy loading" orqali saytning
+      performensini ancha oshirib berganman. Lazy loading'da foydalanuvchi scroll qilib tushmaguncha, kontentni serverdan
+      olib kelmaydi va shuning hisobiga saytning dastlabgi yuklanish tezligi oshadi.
+    `,
     image: '/portfolio/dildora-tursunova-dynamics-market-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://dildora-portfolio.example.com',
+    demoUrl: 'https://dildora-tursunova.dynamics-market.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -228,43 +236,97 @@ export const projects: Project[] = [
   },
   {
     id: 10,
-    title: 'Dynamics Market Platform',
-    slug: 'dynamics-market',
-    description: 'An e-commerce marketplace with advanced filtering and seller management features.',
+    title: 'Dynamics Market',
+    slug: 'dynamics-market-uz',
+    description: `
+      <strong>Dynamics Market</strong> — bu avtomatlashtirish, asbobsozlik, energetika va elektrotexnika
+      sohalarida yetkazib berish va texnik yechimlar taklif qiluvchi taniqli kompaniya. <br>
+      Saytga kompaniya o'z tovarlarini joylaydi. Saytga kirgan mijozlar tovar haqida to'liq ma'lumot olishlari mumkin. Tovarni
+      savatiga qo'shadi va keyin savatdagi barcha tovarlarni buyurtma qiladi. <br>
+      Saytni Angular'da ko'targanman. Sababi bu loyihani kelgusida rivojlantirish va qo'llab-quvvatlashni reja qilyapmiz. Katta masshtabli loyihalar
+      uchun esa Angular taqdim etadigan arxitektura zo'r instrument.
+    `,
     image: '/portfolio/dynamics-market-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    technologies: [ 'Angular 13', 'Tailwind CSS', 'Boostrap', 'SCSS', 'NgBootstrap', ],
     demoUrl: 'https://dynamics-market.example.com',
     features: [
-      'Multi-vendor marketplace',
-      'Advanced product filtering',
-      'Seller dashboards',
-      'Payment integration',
-      'Order tracking system'
+      'Tovarlarni ko\'rish va tanlash',
+      'Tovarlarni savatga qo\'shish',
+      'Buyurtma berish imkoniyati',
+      'Tovarlar haqida to\'liq ma\'lumot',
+      'Maxsulot qidirish tizimi',
+      'Tovarlar filtrlash',
+      'Savatdagi tovarlarni boshqarish'
     ],
-    type: 'Vebinar sayt'
+    type: 'Internet do\'kon'
   },
   {
     id: 11,
-    title: 'EDO Electronic Document System',
-    slug: 'edo-system',
-    description: 'An electronic document management system for government organizations.',
+    title: 'EDO.IJRO.UZ',
+    slug: 'edo-ijro-uz',
+    description: `
+      <div class="mb-4">
+        <strong>EDO.IJRO.UZ</strong> — bu O'zbekiston Respublikasi Prezidentining farmon, qaror, farmoyish va topshiriqlari ijrosini nazorat qilish va hujjat aylanishini
+        raqamli ravishda boshqarish uchun mo'ljallangan idoralararo yagona elektron tizimdir. U davlat organlari va tashkilotlar o'rtasida hujjatlarni tezkor,
+        shaffof va samarali almashish imkonini yaratadi .
+      </div>
+
+      <div class="font-bold">Asosiy vazifalari va imkoniyatlari</div>
+
+      <ul class="text-left mb-4">
+        <li><strong>- Hujjat aylanishini avtomatlashtirish:</strong> Tizim orqali kiruvchi va chiquvchi hujjatlar ro'yxatdan o'tkaziladi, ijrochilarga biriktiriladi va ijro holati real vaqt rejimida kuzatiladi.</li>
+        <li><strong>- Ijro intizomini mustahkamlash:</strong> Prezident farmonlari, qarorlar va boshqa rasmiy topshiriqlarning bajarilishi monitoring qilinadi, bu esa ijro intizomini oshiradi.</li>
+        <li><strong>- Shaffoflik va hisobdorlik:</strong> Tizimda ijro holati bo'yicha aniq statistikalar yuritiladi, bu esa rahbarlar va mas'ul xodimlarning faoliyatini baholash imkonini beradi.</li>
+      </ul>
+
+      <div class="font-bold">Afzalliklari</div>
+
+      <ul class="text-left">
+        <li><strong>- Qog'ozbozlikni kamaytirish:</strong> Hujjatlar elektron shaklda yuritilishi orqali qog'oz sarfi kamayadi va ekologik jihatdan foyda keltiradi.</li>
+        <li><strong>- Tezkorlik va samaradorlik:</strong> Hujjatlar tezda yetkaziladi va ijro jarayoni tezlashadi.</li>
+        <li><strong>- Markazlashtirilgan nazorat:</strong> Barcha hujjatlar va topshiriqlar yagona platformada boshqariladi, bu esa nazoratni osonlashtiradi .</li>
+      </ul>
+    `,
     image: '/portfolio/edo-ijro-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://edo-system.example.com',
+    technologies: [ 'Angular', 'Angular Material', 'SCSS', 'Tailwind CSS' ],
+    demoUrl: 'https://edo.ijro.uz',
     features: [
-      'Digital document workflow',
-      'Electronic signatures',
-      'Approval processes',
-      'Audit trail functionality',
-      'Role-based access control'
+      'Hujjat aylanishini raqamlashtirish',
+      'Elektron imzolar bilan ishlash',
+      'Tasdiqlash jarayonlarini avtomatlashtirish',
+      'Audit nazorati funksionali',
+      'Rolga asoslangan huquqlarni boshqarish'
     ],
-    type: 'Vebinar sayt'
+    type: 'Hujjat aylanish tizimi'
   },
   {
     id: 12,
-    title: 'E-Ticket Railway System',
-    slug: 'eticket-railway',
-    description: 'A modern railway ticketing system with seat selection and payment integration.',
+    title: 'E-Ticket Railway',
+    slug: 'eticket-railway-uz',
+    description: `
+      <div class="mb-4">
+        <strong>eticket.railway.uz</strong> — bu “O‘zbekiston temir yo‘llari” AJ tomonidan taqdim etilgan
+        rasmiy onlayn platforma bo‘lib, foydalanuvchilarga temir yo‘l chiptalarini masofadan turib xarid qilish, qaytarish va tekshirish imkonini beradi.
+        Sayt orqali Toshkent, Samarqand, Buxoro, Xiva, Andijon kabi shaharlarga poyezdlar uchun chiptalarni sotib olish mumkin.
+      </div>
+
+      <div class="font-bold">Asosiy funksiyalar</div>
+
+      <ul class="text-left mb-4">
+        <li><strong>- Chipta xaridi: </strong> Yo‘nalish, sana va poyezd tanlab, chiptani onlayn xarid qilish.</li>
+        <li><strong>- Chipta qaytarish:</strong> Shaxsiy kabinet orqali chiptani bekor qilish va pul mablag‘larini qaytarish imkoniyati mavjud.</li>
+        <li><strong>- Chipta tekshirish:</strong> Xarid qilingan chiptaning haqiqiyligini QR-kod orqali tekshirish.</li>
+        <li><strong>- Jadval va yo‘nalishlar:</strong> Poyezdlar jadvali va mavjud yo‘nalishlar bilan tanishish.</li>
+      </ul>
+
+      <div class="font-bold">Afzalliklari</div>
+
+      <ul class="text-left">
+        <li><strong>- Qog'ozbozlikni kamaytirish:</strong> Hujjatlar elektron shaklda yuritilishi orqali qog'oz sarfi kamayadi va ekologik jihatdan foyda keltiradi.</li>
+        <li><strong>- Tezkorlik va samaradorlik:</strong> Hujjatlar tezda yetkaziladi va ijro jarayoni tezlashadi.</li>
+        <li><strong>- Markazlashtirilgan nazorat:</strong> Barcha hujjatlar va topshiriqlar yagona platformada boshqariladi, bu esa nazoratni osonlashtiradi .</li>
+      </ul>
+    `,
     image: '/portfolio/eticket-railway-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://eticket-railway.example.com',
