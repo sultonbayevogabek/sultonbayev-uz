@@ -135,7 +135,7 @@ export const projects: Project[] = [
     `,
     image: '/portfolio/dynamics-market-uz.jpg',
     technologies: [ 'Angular 13', 'Tailwind CSS', 'Boostrap', 'SCSS', 'NgBootstrap' ],
-    demoUrl: 'https://dynamics-market.example.com',
+    demoUrl: 'https://dynamics-market.uz',
     features: [
       'Tovarlarni ko\'rish va tanlash',
       'Tovarlarni savatga qo\'shish',

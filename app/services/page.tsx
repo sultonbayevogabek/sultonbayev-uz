@@ -12,10 +12,10 @@ export default function ServicesPage() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-            My <span className="gradient-text">Services</span>
+            Mening <span className="gradient-text">xizmatlarim</span>
           </h1>
           <p className="text-muted-foreground max-w-[700px] md:text-lg">
-            Professional frontend development services tailored to your needs with transparent pricing.
+            Ehtiyojingizga qarab dasturlash xizmati qulay narxlarda.
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Globe, Laptop, Paintbrush, Smartphone, Wrench } from 'lucide-react';
+import { Bot, Globe, ShoppingCart, Video } from 'lucide-react';
 
 export interface Service {
    id: number;
@@ -17,116 +17,78 @@ export interface Service {
 export const services: Service[] = [
    {
       id: 1,
-      title: 'Website Development',
-      description: 'Custom website development with modern technologies and responsive design.',
+      title: 'Vebinar saytlar',
+      description: 'Vebinar va onlayn tadbirlar uchun maxsus saytlar yaratish. Interaktiv va foydalanuvchi uchun qulay dizayn.',
       price: {
-         amount: 1200,
+         amount: 150,
          startingFrom: true
       },
-      icon: Globe,
+      icon: Video,
       features: [
-         'Custom design and development',
-         'Responsive for all devices',
-         'SEO-friendly structure',
-         'Up to 5 pages',
-         'Contact form integration',
-         'Basic SEO setup',
-         '2 rounds of revisions'
+         'Vebinar ro\'yxatdan o\'tish tizimi',
+         'Video translyatsiya integratsiyasi',
+         'Ishtirokchilar boshqaruvi',
+         'Chat va Q&A funksiyalari',
+         'Mobil qurilmalarga moslashtirilgan',
+         'SEO optimizatsiya',
+         '2 marta qayta ko\'rib chiqish'
       ]
    },
    {
       id: 2,
-      title: 'UI/UX Design',
-      description: 'Professional user interface and experience design for web applications.',
+      title: 'Landing saytlar',
+      description: 'Mahsulot yoki xizmatni taqdim etish uchun yuqori konversiyali landing sahifalar yaratish.',
       price: {
-         amount: 800,
+         amount: 300,
          startingFrom: true
       },
-      icon: Paintbrush,
+      icon: Globe,
       features: [
-         'User research and analysis',
-         'Wireframing and prototyping',
-         'Interactive mockups',
-         'User flow optimization',
-         'Responsive design',
-         'Design system creation',
-         '3 rounds of revisions'
+         'Yuqori konversiyali dizayn',
+         'CTA tugmalari optimizatsiyasi',
+         'Forma integratsiyasi',
+         'Tezkor yuklanish',
+         'Mobil responsiv dizayn',
+         'Analytics sozlash',
+         'A/B test imkoniyatlari'
       ]
    },
    {
       id: 3,
-      title: 'Frontend Development',
-      description: 'Implementation of modern, responsive frontend with Angular or other frameworks.',
+      title: 'Internet do\'kon saytlari',
+      description: 'To\'liq funksional e-commerce saytlar yaratish. Mahsulot katalogi va to\'lov tizimlari bilan.',
       price: {
-         amount: 30,
-         per: 'hour'
+         amount: 3000,
+         startingFrom: true
       },
-      icon: Code,
+      icon: ShoppingCart,
       features: [
-         'Angular/React/Vue implementation',
-         'Responsive layouts',
-         'Cross-browser compatibility',
-         'Performance optimization',
-         'Component-based architecture',
-         'Integration with APIs',
-         'Code documentation'
+         'Mahsulot katalogi boshqaruvi',
+         'Savatcha va buyurtma tizimi',
+         'To\'lov tizimlarini ulash',
+         'Foydalanuvchi kabineti',
+         'Inventar boshqaruvi',
+         'Admin panel',
+         '3 oy texnik qo\'llab-quvvatlash'
       ]
    },
    {
       id: 4,
-      title: 'Web Application',
-      description: 'Full-featured web application development with frontend and backend integration.',
+      title: 'Telegram bot',
+      description: 'Biznes jarayonlarini avtomatlashtirish uchun maxsus Telegram botlar yaratish.',
       price: {
-         amount: 3500,
+         amount: 500,
          startingFrom: true
       },
-      icon: Laptop,
+      icon: Bot,
       features: [
-         'Custom web application',
-         'User authentication',
-         'Database integration',
-         'API development',
-         'Frontend implementation',
-         'Admin dashboard',
-         '1 month of support'
-      ]
-   },
-   {
-      id: 5,
-      title: 'Responsive Design',
-      description: 'Make your existing website fully responsive across all devices and screen sizes.',
-      price: {
-         amount: 600,
-         startingFrom: true
-      },
-      icon: Smartphone,
-      features: [
-         'Mobile-first approach',
-         'Tablet and desktop optimization',
-         'Cross-browser testing',
-         'Performance optimization',
-         'Accessibility improvements',
-         'CSS framework implementation',
-         '1 week of support'
-      ]
-   },
-   {
-      id: 6,
-      title: 'Website Maintenance',
-      description: 'Ongoing maintenance and support for your website or web application.',
-      price: {
-         amount: 300,
-         per: 'month'
-      },
-      icon: Wrench,
-      features: [
-         'Regular updates and backups',
-         'Security monitoring',
-         'Bug fixes and troubleshooting',
-         'Performance optimization',
-         'Content updates (2 hours/month)',
-         'Technical support',
-         'Monthly reporting'
+         'Maxsus komandalar yaratish',
+         'Ma\'lumotlar bazasi integratsiyasi',
+         'To\'lov tizimlari ulash',
+         'Admin panel',
+         'Foydalanuvchilar statistikasi',
+         'Avtomatik xabarlar',
+         '1 oy bepul qo\'llab-quvvatlash'
       ]
    }
 ];
