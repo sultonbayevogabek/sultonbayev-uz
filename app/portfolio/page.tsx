@@ -9,12 +9,12 @@ export default function PortfolioPage() {
   // Get unique project types
   const allProjectTypes = [...new Set(projects.map((project) => project.type))]
 
-  const [activeFilter, setActiveFilter] = useState("All")
+  const [activeFilter, setActiveFilter] = useState("Barchasi")
   const [filteredProjects, setFilteredProjects] = useState(projects)
 
   // Filter projects when activeFilter changes
   useEffect(() => {
-    if (activeFilter === "All") {
+    if (activeFilter === "Barchasi") {
       setFilteredProjects(projects)
     } else {
       setFilteredProjects(projects.filter((project) => project.type === activeFilter))
@@ -26,14 +26,18 @@ export default function PortfolioPage() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-8">
           <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-            My <span className="gradient-text">Portfolio</span>
+            Mening <span className="gradient-text">loyihalarim</span>
           </h1>
           <p className="text-muted-foreground max-w-[700px] md:text-lg">
-            Explore my projects showcasing frontend development skills, responsive design, and modern web technologies.
+            Zamonaviy veb-texnologiyalar asosida ishlab chiqilgan loyihalarni ko'rib chiqing.
           </p>
         </div>
 
-        <ProjectFilter projectTypes={allProjectTypes} activeFilter={activeFilter} onFilterChange={setActiveFilter} />
+        <ProjectFilter
+          projectTypes={allProjectTypes}
+          activeFilter={activeFilter}
+          onFilterChange={setActiveFilter}
+        />
 
         {filteredProjects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -43,7 +47,7 @@ export default function PortfolioPage() {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-muted-foreground">No projects found for this filter.</p>
+            <p className="text-muted-foreground">Bu filterga mos keladigan loyiha topilmadi</p>
           </div>
         )}
       </div>

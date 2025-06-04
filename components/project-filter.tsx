@@ -12,12 +12,12 @@ export function ProjectFilter({ projectTypes, activeFilter, onFilterChange }: Pr
   return (
     <div className="flex flex-wrap justify-center gap-2 mb-8">
       <Button
-        variant={activeFilter === "All" ? "default" : "outline"}
+        variant={activeFilter === "Barchasi" ? "default" : "outline"}
         size="sm"
-        onClick={() => onFilterChange("All")}
-        className={cn("rounded-full", activeFilter === "All" ? "gradient-bg" : "")}
+        onClick={() => onFilterChange("Barchasi")}
+        className={cn("rounded-full", activeFilter === "Barchasi" ? "gradient-bg" : "")}
       >
-        All
+        Barchasi
       </Button>
 
       {projectTypes.map((type) => (

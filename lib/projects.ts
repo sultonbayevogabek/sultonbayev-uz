@@ -7,7 +7,7 @@ export interface Project {
   technologies: string[];
   demoUrl?: string;
   features: string[];
-  type: 'Vebinar sayt' | 'Landing sayt' | 'Hujjat aylanish tizimi' | `Internet do'kon`;
+  type: 'Vebinar sayt' | 'Landing sayt' | 'Hujjat aylanish tizimi' | `Internet do'kon` | 'Onlayn xizmat';
 }
 
 export const projects: Project[] = [
@@ -318,35 +318,31 @@ export const projects: Project[] = [
         <li><strong>- Chipta tekshirish:</strong> Xarid qilingan chiptaning haqiqiyligini QR-kod orqali tekshirish.</li>
         <li><strong>- Jadval va yo‘nalishlar:</strong> Poyezdlar jadvali va mavjud yo‘nalishlar bilan tanishish.</li>
       </ul>
-
-      <div class="font-bold">Afzalliklari</div>
-
-      <ul class="text-left">
-        <li><strong>- Qog'ozbozlikni kamaytirish:</strong> Hujjatlar elektron shaklda yuritilishi orqali qog'oz sarfi kamayadi va ekologik jihatdan foyda keltiradi.</li>
-        <li><strong>- Tezkorlik va samaradorlik:</strong> Hujjatlar tezda yetkaziladi va ijro jarayoni tezlashadi.</li>
-        <li><strong>- Markazlashtirilgan nazorat:</strong> Barcha hujjatlar va topshiriqlar yagona platformada boshqariladi, bu esa nazoratni osonlashtiradi .</li>
-      </ul>
     `,
     image: '/portfolio/eticket-railway-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://eticket-railway.example.com',
+    technologies: [ 'Angular', 'Boostrap', 'SCSS', 'NgBootstrap' ],
+    demoUrl: 'https://eticket.railway.uz',
     features: [
-      'Real-time seat booking',
-      'Route planning',
-      'Payment processing',
-      'Ticket management',
-      'Administrative dashboard'
+      'Chipta xarid qilish va bron qilish',
+      'Yo\'nalishlar va poyezdlar jadvalini ko\'rish',
+      'Chiptani qaytarish va bekor qilish',
+      'QR-kod orqali chiptani tekshirish',
+      'Shaxsiy kabinet orqali boshqarish',
+      'To\'lov tizimi bilan integratsiya',
+      'Chipta ma\'lumotlarini ko\'rish va saqlash'
     ],
-    type: 'Vebinar sayt'
+    type: 'Onlayn xizmat'
   },
   {
     id: 13,
-    title: 'Fulfiledu Frontend Platform',
-    slug: 'frontt-fulfiledu',
-    description: 'A comprehensive frontend development learning platform with interactive coding exercises.',
+    title: 'Azizbek Xabibullayev',
+    slug: 'frontt-fulfiledu-uz',
+    description: `
+      Xalqaro kompaniyada Senior Frontend dasturchi Azizbek Khabibullayevning kurs vebinari uchun sayt. Sayt stilistikasi sodda va foydalanuvchiga qulay ko'rinishda ishlab chiqilgan.
+    `,
     image: '/portfolio/frontt-fulfiledu-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://frontt-fulfiledu.example.com',
+    demoUrl: 'https://frontt.fulfiledu.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -397,33 +393,15 @@ export const projects: Project[] = [
     type: 'Vebinar sayt'
   },
   {
-    id: 16,
-    title: 'Mahmudjon B Dynamics Market',
-    slug: 'mahmudjon-b-market',
-    description: 'A specialized e-commerce platform for automotive parts and accessories.',
-    image: '/portfolio/mahmudjon-b-dynamics-market-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://mahmudjon-market.example.com',
-    features: [
-      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
-      `Ro'yxatdan o'tish formasi`,
-      `Foydalanuvchilar ma'lumotlarini yig'ish`,
-      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
-      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
-      `Kam trafik sarflagan holda tezkor yuklanish`,
-      `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
     id: 17,
-    title: 'Mahmudjon Dynamics Market Pro',
-    slug: 'mahmudjon-dynamics-market',
-    description: 'An advanced version of the dynamics market platform with enhanced features.',
+    title: 'Mahmudjon Inomjonov',
+    slug: 'mahmudjon-dynamics-market-uz',
+    description: `
+
+    `,
     image: '/portfolio/mahmudjon-dynamics-market-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://mahmudjon-dynamics-pro.example.com',
+    demoUrl: 'https://mahmudjon.dynamics-market.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -438,12 +416,19 @@ export const projects: Project[] = [
   },
   {
     id: 18,
-    title: 'Masterkomo Educational Platform',
-    slug: 'masterkomo-platform',
-    description: 'An online learning management system with video courses and interactive content.',
+    title: 'Kamola Baxtiyarovna',
+    slug: 'masterkomo-uz',
+    description: `
+      San'atkorlar orasida mashhur bo'lgan, ko'p yillik tajribaga ega dizayner-texnolog Kamola Baxtiyarovnaning
+      kurs reklamasi uchun qilingan sayt. Shu saytni tez qilib berishga to'g'ri kelib qolgan.
+      U paytlarda saytlarning performensini oshirish haqida ko'p ham qayg'urmas edim. Chunki kurs tashkilotchilari
+      bu masalaga uncha e'tibor berishmagan oldin. Lekin 94-95% atrofida ko'rsatgan target yoqilgan vaqtda.
+      Hozir 93% ko'rsatyapti ekan. Ma'lumot uchun: bu statistika vaqt o'tishi bilan o'zgarib turadi.
+      Performens ko'p faktorlarga bog'liq.
+    `,
     image: '/portfolio/masterkomo-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://masterkomo.example.com',
+    demoUrl: 'https://masterkomo.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -475,12 +460,12 @@ export const projects: Project[] = [
   },
   {
     id: 20,
-    title: 'Russian Language Learning Platform',
-    slug: 'russkiy-fulfiledu',
-    description: 'A comprehensive Russian language learning platform with interactive exercises.',
+    title: 'Zarina Ismailovna',
+    slug: 'russkiy-fulfiledu-uz',
+    description: `Rus tili o'qituvchisi Zarina Ismailovna uchun qilib berilgan vebinar sayti. Sayt dizaynida qora rangdan to'g'ri foydalanilgan`,
     image: '/portfolio/russkiy-fulfiledu-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://russkiy-fulfiledu.example.com',
+    demoUrl: 'https://russkiy.fulfiledu.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -495,12 +480,14 @@ export const projects: Project[] = [
   },
   {
     id: 21,
-    title: 'SAT Jamals Preparation Platform',
-    slug: 'sat-jamals',
-    description: 'A comprehensive SAT test preparation platform with practice tests and analytics.',
+    title: 'Marifat Jamal',
+    slug: 'sat-jamals-uz',
+    description: `
+      Marifat Jamalning SAT kursi bo'yicha vebinari uchun qilingan sayt. Loyihada o'zim mazza qilib ishlaganman. Saytning stillari o'zimga yoqqan.
+    `,
     image: '/portfolio/sat-jamals-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://sat-jamals.example.com',
+    demoUrl: 'https://sat.jamals.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -515,12 +502,15 @@ export const projects: Project[] = [
   },
   {
     id: 22,
-    title: 'Uzumone Mobile Banking App',
-    slug: 'uzumone-app',
-    description: 'A modern mobile banking application with comprehensive financial services.',
+    title: 'Farhod Ruzmatov',
+    slug: 'uzumone-netlify-app',
+    description: `
+      Cosmos brendi asoschi, Uzum marketning rasmiy spikeri Farhod aka Ruzmatovning online darslari
+      reklamasi uchun qilingan vebinar sayti. Saytda dizayner Uzum marketning stilistikasidan ajoyib ko'rinishda foydalangan.
+    `,
     image: '/portfolio/uzumone-netlify-app.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://uzumone-app.example.com',
+    demoUrl: 'https://uzumone.netlify.app',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -535,12 +525,17 @@ export const projects: Project[] = [
   },
   {
     id: 23,
-    title: 'Webinar Linguabarno Platform',
-    slug: 'webinar-linguabarno',
-    description: 'A specialized webinar platform for language learning with interactive features.',
+    title: 'Lingua Barno',
+    slug: 'vebinar-linguabarno-uz',
+    description: `
+      Taniqli ingliz tili o'qituvchisi Barno Askarovaga "2 kunda ingliz tilida erkin gapirish sirlari" nomli vebinari uchun qilib berilgan. <br>
+      Shu paytgacha vebinar saytlarini Tilda yordamida qilib kelishar ekan. Sayt performensi kodda ko'tarilsa yaxshi bo'ladi,
+      test qilib ko'rmoqchimiz deb yozishgandi. Har xil manbalarda trafik olib kirishar ekan va shunga mos statistika qilib berishimni so'rashdi.
+      Har bitta manba qanday statistika berayotganini ko'rib tursa bo'ladigan statistika qilindi bu saytga.
+    `,
     image: '/portfolio/vebinar-linguabarno-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://webinar-linguabarno.example.com',
+    demoUrl: 'https://vebinar.linguabarno.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -555,12 +550,12 @@ export const projects: Project[] = [
   },
   {
     id: 24,
-    title: 'Web Development Portfolio',
-    slug: 'web-rusiyzabon',
-    description: 'A showcase website for web development services with modern design.',
+    title: 'Nigina Navruzova',
+    slug: 'web-rusiyzabon-uz',
+    description: 'Rus tili o\'qituvchisi Nigina Navruzova uchun qilib berilgan vebinar sayti. Saytda yashil ranglarni yaxshi ishlatgan dizaynerimiz.',
     image: '/portfolio/web-rusiyzabon-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://web-rusiyzabon.example.com',
+    demoUrl: 'https://web.rusiyzabon.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
