@@ -12,6 +12,209 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 12,
+    title: 'E-Ticket',
+    slug: 'eticket-railway-uz',
+    description: `
+      <div class="mb-4">
+        <strong>eticket.railway.uz</strong> — bu “O‘zbekiston temir yo‘llari” AJ tomonidan taqdim etilgan
+        rasmiy onlayn platforma bo‘lib, foydalanuvchilarga temir yo‘l chiptalarini masofadan turib xarid qilish, qaytarish va tekshirish imkonini beradi.
+        Sayt orqali Toshkent, Samarqand, Buxoro, Xiva, Andijon kabi shaharlarga poyezdlar uchun chiptalarni sotib olish mumkin.
+      </div>
+
+      <div class="font-bold">Asosiy funksiyalar</div>
+
+      <ul class="text-left mb-4">
+        <li><strong>- Chipta xaridi: </strong> Yo‘nalish, sana va poyezd tanlab, chiptani onlayn xarid qilish.</li>
+        <li><strong>- Chipta qaytarish:</strong> Shaxsiy kabinet orqali chiptani bekor qilish va pul mablag‘larini qaytarish imkoniyati mavjud.</li>
+        <li><strong>- Chipta tekshirish:</strong> Xarid qilingan chiptaning haqiqiyligini QR-kod orqali tekshirish.</li>
+        <li><strong>- Jadval va yo‘nalishlar:</strong> Poyezdlar jadvali va mavjud yo‘nalishlar bilan tanishish.</li>
+      </ul>
+    `,
+    image: '/portfolio/eticket-railway-uz.jpg',
+    technologies: [ 'Angular', 'Boostrap', 'SCSS', 'NgBootstrap' ],
+    demoUrl: 'https://eticket.railway.uz',
+    features: [
+      'Chipta xarid qilish va bron qilish',
+      'Yo\'nalishlar va poyezdlar jadvalini ko\'rish',
+      'Chiptani qaytarish va bekor qilish',
+      'QR-kod orqali chiptani tekshirish',
+      'Shaxsiy kabinet orqali boshqarish',
+      'To\'lov tizimi bilan integratsiya',
+      'Chipta ma\'lumotlarini ko\'rish va saqlash'
+    ],
+    type: 'Onlayn xizmat'
+  },
+  {
+    id: 23,
+    title: 'Lingua Barno',
+    slug: 'vebinar-linguabarno-uz',
+    description: `
+      Taniqli ingliz tili o'qituvchisi Barno Askarovaga "2 kunda ingliz tilida erkin gapirish sirlari" nomli vebinari uchun qilib berilgan. <br>
+      Shu paytgacha vebinar saytlarini Tilda yordamida qilib kelishar ekan. Sayt performensi kodda ko'tarilsa yaxshi bo'ladi,
+      test qilib ko'rmoqchimiz deb yozishgandi. Har xil manbalarda trafik olib kirishar ekan va shunga mos statistika qilib berishimni so'rashdi.
+      Har bitta manba qanday statistika berayotganini ko'rib tursa bo'ladigan statistika qilindi bu saytga.
+    `,
+    image: '/portfolio/vebinar-linguabarno-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://vebinar.linguabarno.uz',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
+  {
+    id: 15,
+    title: 'E-Huquqshunos',
+    slug: 'lawyer-ijro-uz',
+    description: `
+      <div class="mb-4">
+        <strong>lawyer.ijro.uz</strong> — bu O'zbekiston Respublikasida yuridik xizmatlar va ijro
+        intizomini ta'minlash uchun yaratilgan elektron tizimdir
+      </div>
+
+      <div class="font-bold">Asosiy funksiyalar</div>
+
+      <ul class="text-left mb-4">
+        <li><strong>- Ijro intizomi tizimi: </strong> Idoralararо yagona elektron tizim sifatida ishlaydi</li>
+        <li><strong>- Elektron yurist xizmatlari:</strong> Huquqiy masalalarda elektron yordam beradi.</li>
+      </ul>
+    `,
+    image: '/portfolio/lawyer-ijro-uz.jpg',
+    technologies: [ 'Angular', 'Angular Material', 'SCSS', 'Tailwind CSS' ],
+    demoUrl: 'https://lawyer.ijro.uz',
+    features: [
+      'Huquqiy hujjatlarni elektron boshqarish',
+      'Huquqshunoslar uchun avtomatlashtirilgan ish jarayoni',
+      'Sud qarorlarini kuzatish tizimi',
+      'Mijozlar ma\'lumotlarini boshqarish',
+      'Huquqiy maslahatlar moduli'
+    ],
+    type: 'Hujjat aylanish tizimi'
+  },
+  {
+    id: 21,
+    title: 'Marifat Jamal',
+    slug: 'sat-jamals-uz',
+    description: `
+      Marifat Jamalning SAT kursi bo'yicha vebinari uchun qilingan sayt. Loyihada o'zim mazza qilib ishlaganman. Saytning stillari o'zimga yoqqan.
+    `,
+    image: '/portfolio/sat-jamals-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://sat.jamals.uz',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
+  {
+    id: 10,
+    title: 'Dynamics Market',
+    slug: 'dynamics-market-uz',
+    description: `
+      <strong>Dynamics Market</strong> — bu avtomatlashtirish, asbobsozlik, energetika va elektrotexnika
+      sohalarida yetkazib berish va texnik yechimlar taklif qiluvchi taniqli kompaniya. <br>
+      Saytga kompaniya o'z tovarlarini joylaydi. Saytga kirgan mijozlar tovar haqida to'liq ma'lumot olishlari mumkin. Tovarni
+      savatiga qo'shadi va keyin savatdagi barcha tovarlarni buyurtma qiladi. <br>
+      Saytni Angular'da ko'targanman. Sababi bu loyihani kelgusida rivojlantirish va qo'llab-quvvatlashni reja qilyapmiz. Katta masshtabli loyihalar
+      uchun esa Angular taqdim etadigan arxitektura zo'r instrument.
+    `,
+    image: '/portfolio/dynamics-market-uz.jpg',
+    technologies: [ 'Angular 13', 'Tailwind CSS', 'Boostrap', 'SCSS', 'NgBootstrap' ],
+    demoUrl: 'https://dynamics-market.example.com',
+    features: [
+      'Tovarlarni ko\'rish va tanlash',
+      'Tovarlarni savatga qo\'shish',
+      'Buyurtma berish imkoniyati',
+      'Tovarlar haqida to\'liq ma\'lumot',
+      'Maxsulot qidirish tizimi',
+      'Tovarlar filtrlash',
+      'Savatdagi tovarlarni boshqarish'
+    ],
+    type: 'Internet do\'kon'
+  },
+  {
+    id: 9,
+    title: 'Dildora Tursunova',
+    slug: 'dildora-tursunova-dynamics-market-uz',
+    description: `
+      Hozirda Uzinfocom'da HR bo'limi rahbari lavozimida ishlayotgan va HR sohasida ko'p yillik tajribaga
+      ega ekspert Dildora Tursunovaning "Qanday qilib aniq formula asosida kuchli va sodiq jamoa qurish
+      mumkin?" nomli oflayn seminari uchun qilingan lending sahifa. <br>
+      Saytni hosting'ga yuklab, performensini tekshirib ko'rganimda juda yomon natija ko'rsatgan (25%😭).
+      Tashkilotchilar sayt yuklanish tezligini oshirib berishimni so'rashgan. Keyin "lazy loading" orqali saytning
+      performensini ancha oshirib berganman. Lazy loading'da foydalanuvchi scroll qilib tushmaguncha, kontentni serverdan
+      olib kelmaydi va shuning hisobiga saytning dastlabgi yuklanish tezligi oshadi.
+    `,
+    image: '/portfolio/dildora-tursunova-dynamics-market-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://dildora-tursunova.dynamics-market.uz',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
+  {
+    id: 11,
+    title: 'EDO.IJRO.UZ',
+    slug: 'edo-ijro-uz',
+    description: `
+      <div class="mb-4">
+        <strong>EDO.IJRO.UZ</strong> — bu O'zbekiston Respublikasi Prezidentining farmon, qaror, farmoyish va topshiriqlari ijrosini nazorat qilish va hujjat aylanishini
+        raqamli ravishda boshqarish uchun mo'ljallangan idoralararo yagona elektron tizimdir. U davlat organlari va tashkilotlar o'rtasida hujjatlarni tezkor,
+        shaffof va samarali almashish imkonini yaratadi .
+      </div>
+
+      <div class="font-bold">Asosiy vazifalari va imkoniyatlari</div>
+
+      <ul class="text-left mb-4">
+        <li><strong>- Hujjat aylanishini avtomatlashtirish:</strong> Tizim orqali kiruvchi va chiquvchi hujjatlar ro'yxatdan o'tkaziladi, ijrochilarga biriktiriladi va ijro holati real vaqt rejimida kuzatiladi.</li>
+        <li><strong>- Ijro intizomini mustahkamlash:</strong> Prezident farmonlari, qarorlar va boshqa rasmiy topshiriqlarning bajarilishi monitoring qilinadi, bu esa ijro intizomini oshiradi.</li>
+        <li><strong>- Shaffoflik va hisobdorlik:</strong> Tizimda ijro holati bo'yicha aniq statistikalar yuritiladi, bu esa rahbarlar va mas'ul xodimlarning faoliyatini baholash imkonini beradi.</li>
+      </ul>
+
+      <div class="font-bold">Afzalliklari</div>
+
+      <ul class="text-left">
+        <li><strong>- Qog'ozbozlikni kamaytirish:</strong> Hujjatlar elektron shaklda yuritilishi orqali qog'oz sarfi kamayadi va ekologik jihatdan foyda keltiradi.</li>
+        <li><strong>- Tezkorlik va samaradorlik:</strong> Hujjatlar tezda yetkaziladi va ijro jarayoni tezlashadi.</li>
+        <li><strong>- Markazlashtirilgan nazorat:</strong> Barcha hujjatlar va topshiriqlar yagona platformada boshqariladi, bu esa nazoratni osonlashtiradi .</li>
+      </ul>
+    `,
+    image: '/portfolio/edo-ijro-uz.jpg',
+    technologies: [ 'Angular', 'Angular Material', 'SCSS', 'Tailwind CSS' ],
+    demoUrl: 'https://edo.ijro.uz',
+    features: [
+      'Hujjat aylanishini raqamlashtirish',
+      'Elektron imzolar bilan ishlash',
+      'Tasdiqlash jarayonlarini avtomatlashtirish',
+      'Audit nazorati funksionali',
+      'Rolga asoslangan huquqlarni boshqarish'
+    ],
+    type: 'Hujjat aylanish tizimi'
+  },
+  {
     id: 1,
     title: 'Komiljon Xamidjonov',
     slug: 'programming-fulfiledu-uz',
@@ -207,133 +410,6 @@ export const projects: Project[] = [
     type: 'Vebinar sayt'
   },
   {
-    id: 9,
-    title: 'Dildora Tursunova',
-    slug: 'dildora-tursunova-dynamics-market-uz',
-    description: `
-      Hozirda Uzinfocom'da HR bo'limi rahbari lavozimida ishlayotgan va HR sohasida ko'p yillik tajribaga
-      ega ekspert Dildora Tursunovaning "Qanday qilib aniq formula asosida kuchli va sodiq jamoa qurish
-      mumkin?" nomli oflayn seminari uchun qilingan lending sahifa. <br>
-      Saytni hosting'ga yuklab, performensini tekshirib ko'rganimda juda yomon natija ko'rsatgan (25%😭).
-      Tashkilotchilar sayt yuklanish tezligini oshirib berishimni so'rashgan. Keyin "lazy loading" orqali saytning
-      performensini ancha oshirib berganman. Lazy loading'da foydalanuvchi scroll qilib tushmaguncha, kontentni serverdan
-      olib kelmaydi va shuning hisobiga saytning dastlabgi yuklanish tezligi oshadi.
-    `,
-    image: '/portfolio/dildora-tursunova-dynamics-market-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://dildora-tursunova.dynamics-market.uz',
-    features: [
-      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
-      `Ro'yxatdan o'tish formasi`,
-      `Foydalanuvchilar ma'lumotlarini yig'ish`,
-      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
-      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
-      `Kam trafik sarflagan holda tezkor yuklanish`,
-      `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
-    id: 10,
-    title: 'Dynamics Market',
-    slug: 'dynamics-market-uz',
-    description: `
-      <strong>Dynamics Market</strong> — bu avtomatlashtirish, asbobsozlik, energetika va elektrotexnika
-      sohalarida yetkazib berish va texnik yechimlar taklif qiluvchi taniqli kompaniya. <br>
-      Saytga kompaniya o'z tovarlarini joylaydi. Saytga kirgan mijozlar tovar haqida to'liq ma'lumot olishlari mumkin. Tovarni
-      savatiga qo'shadi va keyin savatdagi barcha tovarlarni buyurtma qiladi. <br>
-      Saytni Angular'da ko'targanman. Sababi bu loyihani kelgusida rivojlantirish va qo'llab-quvvatlashni reja qilyapmiz. Katta masshtabli loyihalar
-      uchun esa Angular taqdim etadigan arxitektura zo'r instrument.
-    `,
-    image: '/portfolio/dynamics-market-uz.jpg',
-    technologies: [ 'Angular 13', 'Tailwind CSS', 'Boostrap', 'SCSS', 'NgBootstrap', ],
-    demoUrl: 'https://dynamics-market.example.com',
-    features: [
-      'Tovarlarni ko\'rish va tanlash',
-      'Tovarlarni savatga qo\'shish',
-      'Buyurtma berish imkoniyati',
-      'Tovarlar haqida to\'liq ma\'lumot',
-      'Maxsulot qidirish tizimi',
-      'Tovarlar filtrlash',
-      'Savatdagi tovarlarni boshqarish'
-    ],
-    type: 'Internet do\'kon'
-  },
-  {
-    id: 11,
-    title: 'EDO.IJRO.UZ',
-    slug: 'edo-ijro-uz',
-    description: `
-      <div class="mb-4">
-        <strong>EDO.IJRO.UZ</strong> — bu O'zbekiston Respublikasi Prezidentining farmon, qaror, farmoyish va topshiriqlari ijrosini nazorat qilish va hujjat aylanishini
-        raqamli ravishda boshqarish uchun mo'ljallangan idoralararo yagona elektron tizimdir. U davlat organlari va tashkilotlar o'rtasida hujjatlarni tezkor,
-        shaffof va samarali almashish imkonini yaratadi .
-      </div>
-
-      <div class="font-bold">Asosiy vazifalari va imkoniyatlari</div>
-
-      <ul class="text-left mb-4">
-        <li><strong>- Hujjat aylanishini avtomatlashtirish:</strong> Tizim orqali kiruvchi va chiquvchi hujjatlar ro'yxatdan o'tkaziladi, ijrochilarga biriktiriladi va ijro holati real vaqt rejimida kuzatiladi.</li>
-        <li><strong>- Ijro intizomini mustahkamlash:</strong> Prezident farmonlari, qarorlar va boshqa rasmiy topshiriqlarning bajarilishi monitoring qilinadi, bu esa ijro intizomini oshiradi.</li>
-        <li><strong>- Shaffoflik va hisobdorlik:</strong> Tizimda ijro holati bo'yicha aniq statistikalar yuritiladi, bu esa rahbarlar va mas'ul xodimlarning faoliyatini baholash imkonini beradi.</li>
-      </ul>
-
-      <div class="font-bold">Afzalliklari</div>
-
-      <ul class="text-left">
-        <li><strong>- Qog'ozbozlikni kamaytirish:</strong> Hujjatlar elektron shaklda yuritilishi orqali qog'oz sarfi kamayadi va ekologik jihatdan foyda keltiradi.</li>
-        <li><strong>- Tezkorlik va samaradorlik:</strong> Hujjatlar tezda yetkaziladi va ijro jarayoni tezlashadi.</li>
-        <li><strong>- Markazlashtirilgan nazorat:</strong> Barcha hujjatlar va topshiriqlar yagona platformada boshqariladi, bu esa nazoratni osonlashtiradi .</li>
-      </ul>
-    `,
-    image: '/portfolio/edo-ijro-uz.jpg',
-    technologies: [ 'Angular', 'Angular Material', 'SCSS', 'Tailwind CSS' ],
-    demoUrl: 'https://edo.ijro.uz',
-    features: [
-      'Hujjat aylanishini raqamlashtirish',
-      'Elektron imzolar bilan ishlash',
-      'Tasdiqlash jarayonlarini avtomatlashtirish',
-      'Audit nazorati funksionali',
-      'Rolga asoslangan huquqlarni boshqarish'
-    ],
-    type: 'Hujjat aylanish tizimi'
-  },
-  {
-    id: 12,
-    title: 'E-Ticket Railway',
-    slug: 'eticket-railway-uz',
-    description: `
-      <div class="mb-4">
-        <strong>eticket.railway.uz</strong> — bu “O‘zbekiston temir yo‘llari” AJ tomonidan taqdim etilgan
-        rasmiy onlayn platforma bo‘lib, foydalanuvchilarga temir yo‘l chiptalarini masofadan turib xarid qilish, qaytarish va tekshirish imkonini beradi.
-        Sayt orqali Toshkent, Samarqand, Buxoro, Xiva, Andijon kabi shaharlarga poyezdlar uchun chiptalarni sotib olish mumkin.
-      </div>
-
-      <div class="font-bold">Asosiy funksiyalar</div>
-
-      <ul class="text-left mb-4">
-        <li><strong>- Chipta xaridi: </strong> Yo‘nalish, sana va poyezd tanlab, chiptani onlayn xarid qilish.</li>
-        <li><strong>- Chipta qaytarish:</strong> Shaxsiy kabinet orqali chiptani bekor qilish va pul mablag‘larini qaytarish imkoniyati mavjud.</li>
-        <li><strong>- Chipta tekshirish:</strong> Xarid qilingan chiptaning haqiqiyligini QR-kod orqali tekshirish.</li>
-        <li><strong>- Jadval va yo‘nalishlar:</strong> Poyezdlar jadvali va mavjud yo‘nalishlar bilan tanishish.</li>
-      </ul>
-    `,
-    image: '/portfolio/eticket-railway-uz.jpg',
-    technologies: [ 'Angular', 'Boostrap', 'SCSS', 'NgBootstrap' ],
-    demoUrl: 'https://eticket.railway.uz',
-    features: [
-      'Chipta xarid qilish va bron qilish',
-      'Yo\'nalishlar va poyezdlar jadvalini ko\'rish',
-      'Chiptani qaytarish va bekor qilish',
-      'QR-kod orqali chiptani tekshirish',
-      'Shaxsiy kabinet orqali boshqarish',
-      'To\'lov tizimi bilan integratsiya',
-      'Chipta ma\'lumotlarini ko\'rish va saqlash'
-    ],
-    type: 'Onlayn xizmat'
-  },
-  {
     id: 13,
     title: 'Azizbek Xabibullayev',
     slug: 'frontt-fulfiledu-uz',
@@ -357,12 +433,15 @@ export const projects: Project[] = [
   },
   {
     id: 14,
-    title: 'Hurriyat Rahmatullaeva Portfolio',
-    slug: 'hurriyat-portfolio',
-    description: 'An elegant portfolio website for a professional designer with clean aesthetics.',
+    title: 'Hurriyat Rahmatullaeva',
+    slug: 'hurriyat-rahmatullaeva',
+    description: `
+      Taniqli psixolog Hurriyat Rahmatullayevaning "3 texnika orqali farzandingizni urmasdan tarbiyalang va uni Boshqaruvchi Lider qiling" nomli
+      3 kunlik bepul masterklassi uchun qilingan vebinar sayti
+    `,
     image: '/portfolio/hurriyat-rahmatullaeva.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://hurriyat-portfolio.example.com',
+    demoUrl: 'https://hurriyatrahmatullayeva.netlify.app/',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -376,28 +455,15 @@ export const projects: Project[] = [
     type: 'Vebinar sayt'
   },
   {
-    id: 15,
-    title: 'Lawyer IJRO Legal Platform',
-    slug: 'lawyer-ijro',
-    description: 'A comprehensive legal case management system for law firms and attorneys.',
-    image: '/portfolio/lawyer-ijro-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://lawyer-ijro.example.com',
-    features: [
-      'Case management',
-      'Client communication',
-      'Document management',
-      'Billing system',
-      'Court schedule tracking'
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
     id: 17,
     title: 'Mahmudjon Inomjonov',
     slug: 'mahmudjon-dynamics-market-uz',
     description: `
-
+      AI orqali videomontaj qilish bo'yicha 2 yillik tajribaga ega mutaxassis Mahmudjon Inomjonovning
+      2 kunlik pullik marafoni uchun qilingan vebinar saytlar. Test qilish maqsadida 2 xil versiyasini qildirishdi.
+      Sayt performensi juda muhim bo'lganligi sababidan faqat mobil versiyasini qildim. Shuningdek sayt uchun qo'llangan
+      shrift hamma qurilmada "by default" topiladi. Bu esa saytning internetdan yuklanish tezligini oshiradi,
+      shu bilan birga foydalanuvchining internet trafigini ancha tejab beradi. Umumiy hisobda sayt to'liq yuklanishi uchun ~443 KB trafik ketyapti.
     `,
     image: '/portfolio/mahmudjon-dynamics-market-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
@@ -443,20 +509,25 @@ export const projects: Project[] = [
   },
   {
     id: 19,
-    title: 'OKR Management System',
-    slug: 'okr-system',
-    description: 'A modern OKR (Objectives and Key Results) tracking system for teams and organizations.',
+    title: 'OKR',
+    slug: 'okr-us-uz',
+    description: `
+      OKR - Objective Key Result. Bu tizim O'zbekiston Respublikasi Raqamli texnologiyalar vazirligi uchun maxsus ishlab chiqilgan.
+      Tizimda topshiriqlar va ularning ijro holati nazorat qilib boriladi.
+    `,
     image: '/portfolio/okr-us-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://okr-system.example.com',
+    technologies: [ 'Angular', 'Angular Material', 'SCSS', 'Tailwind CSS' ],
+    demoUrl: 'https://okr.us.uz',
     features: [
-      'Goal setting and tracking',
-      'Team alignment tools',
-      'Progress visualization',
-      'Performance analytics',
-      'Integration capabilities'
+      'Maqsad va topshiriqlarni belgilash',
+      'Topshiriqlarni jamoaga taqsimlash',
+      'Jarayonlarni vizualizatsiya qilish',
+      'Natijalarni tahlil qilish',
+      'Integratsiya imkoniyatlari',
+      'Topshiriqlarni nazorat qilish',
+      'KPI ko\'rsatkichlarini kuzatish'
     ],
-    type: 'Vebinar sayt'
+    type: 'Onlayn xizmat'
   },
   {
     id: 20,
@@ -466,28 +537,6 @@ export const projects: Project[] = [
     image: '/portfolio/russkiy-fulfiledu-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://russkiy.fulfiledu.uz',
-    features: [
-      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
-      `Ro'yxatdan o'tish formasi`,
-      `Foydalanuvchilar ma'lumotlarini yig'ish`,
-      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
-      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
-      `Kam trafik sarflagan holda tezkor yuklanish`,
-      `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
-    id: 21,
-    title: 'Marifat Jamal',
-    slug: 'sat-jamals-uz',
-    description: `
-      Marifat Jamalning SAT kursi bo'yicha vebinari uchun qilingan sayt. Loyihada o'zim mazza qilib ishlaganman. Saytning stillari o'zimga yoqqan.
-    `,
-    image: '/portfolio/sat-jamals-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://sat.jamals.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -511,31 +560,6 @@ export const projects: Project[] = [
     image: '/portfolio/uzumone-netlify-app.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://uzumone.netlify.app',
-    features: [
-      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
-      `Ro'yxatdan o'tish formasi`,
-      `Foydalanuvchilar ma'lumotlarini yig'ish`,
-      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
-      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
-      `Kam trafik sarflagan holda tezkor yuklanish`,
-      `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
-    id: 23,
-    title: 'Lingua Barno',
-    slug: 'vebinar-linguabarno-uz',
-    description: `
-      Taniqli ingliz tili o'qituvchisi Barno Askarovaga "2 kunda ingliz tilida erkin gapirish sirlari" nomli vebinari uchun qilib berilgan. <br>
-      Shu paytgacha vebinar saytlarini Tilda yordamida qilib kelishar ekan. Sayt performensi kodda ko'tarilsa yaxshi bo'ladi,
-      test qilib ko'rmoqchimiz deb yozishgandi. Har xil manbalarda trafik olib kirishar ekan va shunga mos statistika qilib berishimni so'rashdi.
-      Har bitta manba qanday statistika berayotganini ko'rib tursa bo'ladigan statistika qilindi bu saytga.
-    `,
-    image: '/portfolio/vebinar-linguabarno-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://vebinar.linguabarno.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,

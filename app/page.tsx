@@ -12,7 +12,7 @@ import { blogPosts } from '@/lib/blog-posts';
 
 export default function Home() {
   // Get the latest 3 projects
-  const featuredProjects = projects.slice(0, 3)
+  const featuredProjects = projects.slice(0, 6)
   // Get the latest 2 blog posts
   const latestPosts = blogPosts.slice(0, 3)
 
