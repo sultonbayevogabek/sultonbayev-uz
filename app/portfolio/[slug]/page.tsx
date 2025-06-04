@@ -3,7 +3,7 @@ import { SkillBadge } from '@/components/skill-badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Github, ExternalLink, Code2, FileJson, Palette, Layers, Cpu, LayoutGrid, Boxes } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Code2, FileJson, Palette, Layers, Cpu, LayoutGrid, Boxes } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
 interface ProjectPageProps {
@@ -53,7 +53,8 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             <div className="mt-8 space-y-6">
               <h1 className="text-3xl font-bold">{ project.title }</h1>
 
-              <p className="text-muted-foreground">{ project.description }</p>
+              <p className="text-muted-foreground text-justify" dangerouslySetInnerHTML={ { __html: project.description } }>
+              </p>
 
               <div>
                 <h3 className="text-lg font-semibold mb-3">Xususiyatlar</h3>

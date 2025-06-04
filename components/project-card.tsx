@@ -34,7 +34,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <CardContent className="p-4">
           <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
-          <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.description}</p>
+          <p className="text-muted-foreground text-sm mb-4 line-clamp-2" dangerouslySetInnerHTML={ { __html: project.description } }>
+          </p>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
               <SkillBadge

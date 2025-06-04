@@ -4,10 +4,10 @@ export interface Project {
   slug: string;
   description: string;
   image: string;
-  technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+  technologies: string[];
   demoUrl?: string;
   features: string[];
-  type: 'Vebinar sayt'
+  type: 'Vebinar sayt' | 'Landing sayt' | 'Hujjat aylanish tizimi' | `Internet do'kon`;
 }
 
 export const projects: Project[] = [
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     `,
     image: '/portfolio/programming-fulfiledu-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://demo-ecommerce.example.com',
+    demoUrl: 'https://programming.fulfiledu.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
@@ -38,127 +38,171 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Fulfil Education',
-    slug: 'fulfil-education-uz',
+    slug: 'fulfiledu-uz',
     description: `
       Fulfil jamoasi uchun ko'p sahifalik veb-sayt. Saytda jamoa haqida to'liq ma'lumot olish mumkin. Shuningdek Fulfil jamoasida bo'layotgan yangiliklar va
-      bo'sh ish o'rinlari haqidagi ma'lumotlar saytga joylab turiladi. \n
+      bo'sh ish o'rinlari haqidagi ma'lumotlar saytga joylab turiladi. <br>
       Saytni Angular'da ko'targanman. Nimaga Angular? Angular SPA ilovalarni yaratish uchun imkoniyat beradi. SPA - Single Page Application. Bu degani sayt bir marta
       yuklanganidan keyin, boshqa menyularga o'tishda foydalanuvchidan qo'shimcha internet trafik va vaqt talab qilinmaydi.
       Saytga bitta kirgan odam xuddi telefoniga dastur o'rnatgan odamga o'xshab bo'limdan bo'limga, sayt fayllarini boshqatdan yuklamasdan foydalana oladi.
       Admin uchun alohida panel qilinmagan. Ma'lumotlarni dinamik kiritib turish uchun Google Sheets'dan foydalanilgan.
     `,
     image: '/portfolio/fulfiledu-uz.jpg',
+    technologies: [ 'Angular', 'Tailwind CSS' ],
+    demoUrl: 'https://fulfiledu.uz',
+    features: [
+      `Jamoa haqida to'liq ma'lumot`,
+      `Yangiliklar bo'limi`,
+      `Bo'sh ish o'rinlari bo'limi`,
+      `SPA (Single Page Application) tizimi`,
+      `Tezkor sahifalar orasida o'tish`,
+      `Google Sheets orqali dinamik kontent`,
+      `Ma'lumotlarni saqlash va boshqarish`
+    ],
+    type: 'Landing sayt'
+  },
+  {
+    id: 3,
+    title: 'Maftuna Arabbayevna',
+    slug: 'qobiliyat-fulfiledu-uz',
+    description: `
+      "Badavlat Ayol" loyihasining spikeri Maftuna Arabbayevaning "O'z imkoniyatlaringizni
+      kashf eting" nomli 2 kunlik onlayn darsi uchun tanishtiruv sayti. Saytda mentorning ustidagi
+      kiyimga mos ranglar palitrasi yaxshi tanlangan. <br>
+
+      Shu saytdan boshlab saytlarga statistika qo'shishni boshlaganman.
+      Kerakli ma'lumotlar oddiy ko'rinishda ko'rsatib berilgan.
+      Statistika ma'lumotlarini ko'rsatishga AI ham ozgina qarashib yuborgan 🫣 (Claude AI)
+    `,
+    image: '/portfolio/qobiliyat-fulfiledu-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://travel-blog.example.com',
+    demoUrl: 'https://qobiliyat.fulfiledu.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
       `Foydalanuvchilar ma'lumotlarini yig'ish`,
       `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
       `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
-      `Kam trafik sarflagan holda tezkor yuklanish`
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
-    id: 3,
-    title: 'Fitness Tracker App',
-    slug: 'fitness-tracker-app',
-    description: 'A web application for tracking workouts, nutrition, and fitness progress with visualizations.',
-    image: '/portfolio/qobiliyat-fulfiledu-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://fitness-tracker.example.com',
-    features: [
-      'Workout logging and tracking',
-      'Nutrition diary',
-      'Progress visualization',
-      'Goal setting',
-      'Customizable dashboard'
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
   {
     id: 4,
-    title: 'Real Estate Listing Portal',
-    slug: 'real-estate-listing-portal',
-    description: 'A modern real estate platform for property listings with advanced search and filtering capabilities.',
+    title: 'Rustilida Loyihasi',
+    slug: 'rustilida-uz',
+    description: `Ko'p yillik tajribaga ega rus tili o'qituvchisi Zarina Ismailovnaning kurslari uchun sotuv sayti. Saytda kurs haqida to'liq ma'lumot berilgan. Shuningdek rasmiy sertfikatlar va o'quvchilarning kurs haqidagi fikrlari joylangan.`,
     image: '/portfolio/rustilida-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://realestate.example.com',
+    demoUrl: 'https://rustilida.uz',
     features: [
-      'Advanced property search',
-      'Interactive map view',
-      'Virtual property tours',
-      'Saved favorites',
-      'Contact forms for inquiries'
+      `Kurs haqida to'liq ma'lumot`,
+      `Mentor haqida ma'lumot`,
+      `Onlayn ro'yxatdan o'tish`,
+      `O'quvchilarning fikrlari`,
+      `Sertifikatlar galereyasi`,
+      `Kursning narxlari`,
+      `Mobil versiyaga moslashgan dizayn`
     ],
-    type: 'Vebinar sayt'
+    type: 'Landing sayt'
   },
   {
     id: 5,
-    title: 'Webinar Landing Page',
-    slug: 'webinar-landing-page',
-    description: 'A high-converting landing page for a tech webinar with registration form and countdown timer.',
+    title: 'Zebiniso Yadgarova',
+    slug: 'vebinar-dynamics-market-uz',
+    description: `
+      Ko'p yillik tajribaga ega bolalar shifokori, Zebiniso Yadgarovaning "Sog'lom bola formulasi" nomli onlayn darsi uchun qilingan vebinar sahifasi. <br>
+      Domen nimaga bunaqa vebinarga mosmas degan savol tug'ilishi mumkin albatta.
+      Ba'zi hollarda vebinar tashkilotchilarida .uz domeni bo'lmaydi va o'zingizda bor domenga ulab beravering,
+      vaqtimiz kam domen sotib olish uchun deyishadi. Domen sotib olinganidan keyin to'liq aktiv bo'lib ketishi 24 soatdan 48 soatgacha
+      cho'zilishi mumkin. Agar dam olish kunlariga to'g'ri kelib qolsa, domen aktivlashishiga ketadigan vaqt bundan ham cho'zilishi mumkin.
+    `,
     image: '/portfolio/vebinar-dynamics-market-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://webinar-landing.example.com',
+    demoUrl: 'https://vebinar.dynamics-market.uz',
     features: [
-      'Responsive design',
-      'Registration form with validation',
-      'Countdown timer',
-      'Speaker profiles',
-      'Agenda section'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
   {
     id: 6,
-    title: 'Product Showcase',
-    slug: 'product-showcase',
-    description: 'An interactive product showcase page with 3D visualization and detailed specifications.',
+    title: 'Video darslik sotuv sayti',
+    slug: 'video-lessons-fulfil',
+    description: `
+      Oldin Zoom'da frontend dasturlash yo'nalishi bo'yicha onlayn dars berganman. Darslarni o'quvchilar darsdan keyin ham ko'ra olishlari uchun
+      yozib olardim va telegram guruhga tashlab qo'yardim. Shu yozib olingan darslarni sotish fikri kelgan va reklama uchun shu saytni yasaganman. <br>
+
+      Saytni yasashda native texnologiyalardan foydalanganman. O'zimga yoqqan bu qilgan ishim. Chiroyli chiqqan deb hisoblayman.
+    `,
     image: '/portfolio/video-lessons-fulfil.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://product-showcase.example.com',
+    technologies: [ 'HTML', 'CSS', 'JavaScript' ],
+    demoUrl: 'https://video-lessons-fulfil.netlify.app',
     features: [
-      'Interactive 3D product visualization',
-      'Animated feature highlights',
-      'Technical specifications',
-      'Customer testimonials',
-      'Call-to-action buttons'
+      `Kurs haqida to'liq ma'lumot`,
+      `Mentor haqida ma'lumot`,
+      `Onlayn ro'yxatdan o'tish`,
+      `O'quvchilarning fikrlari`,
+      `Kurs davomida bajariladigan loyihalar`,
+      `Kursning narxlari`,
+      `Mobil versiyaga moslashgan dizayn`
     ],
-    type: 'Vebinar sayt'
+    type: 'Landing sayt'
   },
   {
     id: 7,
-    title: 'ABM Business Platform',
-    slug: 'abm-business-platform',
-    description: 'A comprehensive business management platform for small and medium enterprises.',
+    title: 'ABM tarjimonlik firmasi sayti',
+    slug: 'abm-uz',
+    description: `
+      O'zbekistonda uzoq yillardan buyon faoliyat yuritib kelayotgan ABM tarjimonlik firmasi uchun ushbu sayt qilib berilgan. Saytda firma
+      ko'rsatadigan xizmat turlari, firmaning doimiy mijozlari va mijozlarning ular haqidagi bildirgan izohlarini ko'rish mumkin. <br>
+      Sayt tarjimonlik firmasiniki bo'lgani uchun sayt kontenti ko'p tillik qilib ishlab chiqilgan, ya'ni saytga tashrif buyurgan odam
+      o'zbek, rus va ingliz tillarida ushbu firma haqidagi ma'lumotlarni o'qishi mumkin.
+    `,
     image: '/portfolio/abm-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://abm-platform.example.com',
+    technologies: [ 'HTML', 'CSS', 'JavaScript' ],
+    demoUrl: 'https://abm.uz',
     features: [
-      'CRM functionality',
-      'Inventory management',
-      'Financial reporting',
-      'Employee management',
-      'Multi-tenant architecture'
+      'Kompaniya haqida to\'liq ma\'lumot',
+      'Ko\'p tillilik - o\'zbek, rus va ingliz tillari',
+      'Firma xizmat turlarining tavsifi',
+      'Doimiy mijozlar ro\'yxati',
+      'Mijozlarning fikrlari',
+      'Aloqa uchun ma\'lumotlar',
+      'Mobil versiyaga moslashgan dizayn'
     ],
-    type: 'Vebinar sayt'
+    type: 'Landing sayt'
   },
   {
     id: 8,
-    title: 'Arabtili Language Learning App',
-    slug: 'arabtili-language-app',
-    description: 'A mobile-first web application for learning Arabic language with interactive lessons.',
+    title: 'Iroda Rahmonova',
+    slug: 'arabtili-one-netlify-app',
+    description: `
+      Arab tilini o'qitish bo'yicha katta tajribaga ega mutaxassis Iroda Rahmonovaning kursi uchun vebinar sayt. <br>
+      Sayt performensi yaxshi bo'lishi uchun faqat mobil versiyasini qilib berdi. Bu zo'r yordam berdi deyolmayman. Performens
+      92-93% dan oshmadi. Shunda saytga ulangan fontlar performensga ta'sir qilishini tushunib yetgandim.
+    `,
     image: '/portfolio/arabtili-one-netlify-app.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://arabtili-app.example.com',
+    demoUrl: 'https://arabtili-one.netlify.app',
     features: [
-      'Interactive Arabic lessons',
-      'Pronunciation checker',
-      'Progress tracking',
-      'Offline capability',
-      'Cultural context learning'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -171,11 +215,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://dildora-portfolio.example.com',
     features: [
-      'Animated portfolio gallery',
-      'Responsive design',
-      'Contact form integration',
-      'Social media links',
-      'Performance optimized'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -239,11 +286,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://frontt-fulfiledu.example.com',
     features: [
-      'Interactive coding challenges',
-      'Project-based learning',
-      'Progress tracking',
-      'Code review system',
-      'Community features'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -256,11 +306,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://hurriyat-portfolio.example.com',
     features: [
-      'Minimalist design',
-      'Portfolio gallery',
-      'Smooth animations',
-      'Contact form',
-      'Responsive layout'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -290,11 +343,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://mahmudjon-market.example.com',
     features: [
-      'Automotive parts catalog',
-      'Compatibility checker',
-      'Advanced search filters',
-      'Inventory management',
-      'B2B functionality'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -307,11 +363,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://mahmudjon-dynamics-pro.example.com',
     features: [
-      'AI-powered recommendations',
-      'Advanced analytics',
-      'Multi-language support',
-      'Enterprise features',
-      'High-performance architecture'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -324,11 +383,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://masterkomo.example.com',
     features: [
-      'Video course delivery',
-      'Interactive assessments',
-      'Progress tracking',
-      'Multi-instructor support',
-      'Certificate generation'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -358,11 +420,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://russkiy-fulfiledu.example.com',
     features: [
-      'Interactive Russian lessons',
-      'Grammar exercises',
-      'Vocabulary building',
-      'Pronunciation practice',
-      'Cultural context learning'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -375,11 +440,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://sat-jamals.example.com',
     features: [
-      'Full-length practice tests',
-      'Detailed performance analytics',
-      'Personalized study plans',
-      'Progress tracking',
-      'Weakness identification'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -392,11 +460,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://uzumone-app.example.com',
     features: [
-      'Account management',
-      'Money transfers',
-      'Bill payments',
-      'Investment tracking',
-      'Enhanced security'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -409,11 +480,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://webinar-linguabarno.example.com',
     features: [
-      'Real-time language webinars',
-      'Interactive translation',
-      'Pronunciation feedback',
-      'Cultural context sharing',
-      'Session recording'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   },
@@ -426,11 +500,14 @@ export const projects: Project[] = [
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://web-rusiyzabon.example.com',
     features: [
-      'Service showcase',
-      'Case studies',
-      'Client testimonials',
-      'Modern design',
-      'Contact integration'
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
   }

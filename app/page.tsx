@@ -14,7 +14,7 @@ export default function Home() {
   // Get the latest 3 projects
   const featuredProjects = projects.slice(0, 3)
   // Get the latest 2 blog posts
-  const latestPosts = blogPosts.slice(0, 2)
+  const latestPosts = blogPosts.slice(0, 3)
 
   return (
     <div>
@@ -48,7 +48,7 @@ export default function Home() {
           <div className="flex justify-center mt-8">
             <Button asChild variant="outline">
               <Link href="/portfolio">
-                View All Projects <ArrowRight className="ml-2 h-4 w-4" />
+                Barcha loyihalarni ko'rish <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {latestPosts.map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}

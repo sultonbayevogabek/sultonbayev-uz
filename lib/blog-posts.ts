@@ -546,4 +546,180 @@ export const blogPosts: BlogPost[] = [
         </div>
       `
   },
+  {
+    id: 5,
+    title: 'Loyihalarda Tailwind CSS dan foydalanishning afzalliklar va kamchiliklari',
+    slug: 'tailwind-css-advantages-disadvantages',
+    date: '4-iyun, 2025',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?height=600&width=1200',
+    excerpt: 'Tailwind CSS utility-first CSS framework\'ining kuchli va zaif tomonlarini batafsil o\'rganib, loyihangiz uchun to\'g\'ri qaror qabul qiling.',
+    content: `
+      <p>Tailwind CSS - bu utility-first yondashuvga asoslangan CSS framework bo'lib, zamonaviy veb-dasturlashda
+      tobora mashhur bo'lib bormoqda. Bu framework an'anaviy CSS yozish usulini butunlay o'zgartirib,
+      komponent-asosli dizayn tizimini yaratishga yordam beradi. Ushbu maqolada Tailwind CSS ning asosiy
+      afzalliklari va kamchiliklarini batafsil ko'rib chiqamiz.</p>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Tailwind CSS nima?</h2>
+        <p>Tailwind CSS - bu low-level utility classlar to'plamini taqdim etuvchi CSS framework.
+        Bootstrap yoki Foundation kabi boshqa frameworklardan farqli o'laroq, Tailwind tayyor komponentlar
+        bermaydi, balki dizaynni noldan qurishga imkon beruvchi kichik utility classlarni taklif etadi.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Tailwind CSS ning afzalliklari</h2>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">1. Tez rivojlantirish va prototiplash</h3>
+        <ul class="pl-3">
+          <li>- HTML dan chiqmasdan dizayn yaratish imkoniyati</li>
+          <li>- CSS fayllar o'rtasida o'tishga hojat yo'q</li>
+          <li>- Tezkor prototiplash va eksperiment qilish</li>
+          <li>- Dizayn tizimini darhol qo'llash</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">2. Kichik CSS hajmi</h3>
+        <ul class="pl-3">
+          <li>- <strong class="font-semibold">PurgeCSS integration:</strong> Foydalanilmagan CSS-ni avtomatik olib tashlash</li>
+          <li>- <strong class="font-semibold">JIT (Just-In-Time) mode:</strong> Faqat kerakli classlarni generatsiya qilish</li>
+          <li>- <strong class="font-semibold">Production build:</strong> Juda kichik final CSS fayl hajmi</li>
+          <li>- <strong class="font-semibold">No dead code:</strong> Ishlatilmagan kod muammosi yo'q</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">3. Izchil dizayn tizimi</h3>
+        <ul class="pl-3">
+          <li>- Oldindan belgilangan rang paletrasi</li>
+          <li>- Standartlashtirilgan bo'shliqlar (spacing) tizimi</li>
+          <li>- Typography va o'lchamlar bo'yicha izchillik</li>
+          <li>- Responsive dizayn uchun qulay breakpointlar</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">4. Konfiguratsiya va moslashuvchanlik</h3>
+        <ul class="pl-3">
+          <li>- <strong class="font-semibold">tailwind.config.js:</strong> To'liq sozlash imkoniyati</li>
+          <li>- <strong class="font-semibold">Custom utilities:</strong> O'z utility classlaringizni qo'shish</li>
+          <li>- <strong class="font-semibold">Theme customization:</strong> Brand ranglari va o'lchamlarni belgilash</li>
+          <li>- <strong class="font-semibold">Plugin tizimi:</strong> Funksionallikni kengaytirish</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">5. Modern tooling qo'llab-quvvatlashi</h3>
+        <ul class="pl-3">
+          <li>- VS Code extension bilan IntelliSense</li>
+          <li>- React, Vue, Angular bilan mukammal integratsiya</li>
+          <li>- PostCSS va build toollar bilan ishlash</li>
+          <li>- Hot reload va development experience</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Tailwind CSS ning kamchiliklari</h2>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">1. HTML-ning ko'rinishi va o'qilishi</h3>
+        <ul class="pl-3">
+          <li>- Juda ko'p class nomlari HTML-ni "iflos" qiladi</li>
+          <li>- Kodni o'qish qiyinlashadi, ayniqsa murakkab komponentlarda</li>
+          <li>- Class nomlari juda uzun bo'lishi mumkin</li>
+          <li>- Semantik HTML yozish qiyinlashadi</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">2. O'rganish va xotirda saqlash</h3>
+        <ul class="pl-3">
+          <li>- Minglab utility class nomlarini eslab qolish kerak</li>
+          <li>- CSS bilgan dasturchi uchun ham yangi yondashuv</li>
+          <li>- Responsive va state variantlarini o'rganish</li>
+          <li>- Dokumentatsiyaga tez-tez murojaat qilish zarur</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">3. Dizayner bilan hamkorlik</h3>
+        <ul class="pl-3">
+          <li>- Dizaynerlar Tailwind syntax tushunmasligi mumkin</li>
+          <li>- Figma dan kodga o'tish murakkablashadi</li>
+          <li>- Custom dizayn talablarini amalga oshirish qiyinligi</li>
+          <li>- Pixel-perfect dizayn yaratishda cheklovlar</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">4. Performance va debugging</h3>
+        <ul class="pl-3">
+          <li>- Development mode da katta CSS fayl hajmi</li>
+          <li>- Browser DevTools da debug qilish qiyinligi</li>
+          <li>- CSS Cascade bilan ishlashda muammolar</li>
+          <li>- Class nomlarini izlash va o'zgartirish murakkabligi</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Tailwind CSS qachon ishlatish kerak?</h2>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">Tailwind mos keladi:</h3>
+        <ul class="pl-3">
+          <li>- <strong class="font-semibold">Tez rivojlantirish:</strong> MVP va prototiplar uchun</li>
+          <li>- <strong class="font-semibold">Komponent-asosli arxitektura:</strong> React, Vue komponentlar</li>
+          <li>- <strong class="font-semibold">Dizayn tizimi:</strong> Izchil UI yaratish uchun</li>
+          <li>- <strong class="font-semibold">Kichik jamoa:</strong> CSS architecture haqida tashvishlanmaslik</li>
+          <li>- <strong class="font-semibold">Responsive dizayn:</strong> Mobile-first yondashuv</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">Tailwind mos kelmaydi:</h3>
+        <ul class="pl-3">
+          <li>- <strong class="font-semibold">Murakkab animatsiyalar:</strong> Custom CSS talab etilganda</li>
+          <li>- <strong class="font-semibold">Legacy loyihalar:</strong> Mavjud CSS bilan integratsiya qiyin</li>
+          <li>- <strong class="font-semibold">Unikal dizayn:</strong> Har bir element custom bo'lganda</li>
+          <li>- <strong class="font-semibold">Katta jamoa:</strong> Har xil CSS yondashuvga majburiyat</li>
+          <li>- <strong class="font-semibold">Content-heavy saytlar:</strong> Typography va matn ko'p bo'lganda</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Amaliy maslahatlar</h2>
+      </div>
+
+      <div>
+        <h3 class="mb-1 text-lg font-bold">Tailwind bilan ishlashni yaxshilash:</h3>
+        <ul class="pl-3">
+          <li>- <strong class="font-semibold">Component extraction:</strong> Ko'p ishlatiladigan patternlarni komponentga ajratish</li>
+          <li>- <strong class="font-semibold">@apply directive:</strong> CSS faylida utility classlarni birlashtirish</li>
+          <li>- <strong class="font-semibold">Custom utilities:</strong> O'z utility classlaringizni yaratish</li>
+          <li>- <strong class="font-semibold">Tailwind UI:</strong> Tayyor komponentlar uchun premium resurs</li>
+          <li>- <strong class="font-semibold">Prettier plugin:</strong> Class nomlarini avtomatik tartiblash</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-1 text-xl font-bold">Xulosa</h2>
+        <p>Tailwind CSS zamonaviy frontend development uchun kuchli vosita bo'lib, tez rivojlantirish
+        va izchil dizayn yaratish imkonini beradi. Uning utility-first yondashuvni o'rganish vaqt talab
+        etsa-da, o'zlashtirganingizdan keyin development jarayonini sezilarli tezlashtiradi.</p>
+
+        <p>Eng muhimi, Tailwind CSS ni tanlaganda loyihangizning xususiyatlari, jamoa tarkibi va
+        uzoq muddatli rejalarni hisobga olish kerak. Kichik va o'rta loyihalar uchun bu juda yaxshi
+        tanlov bo'lishi mumkin, lekin murakkab va noyob dizayn talablariga ega loyihalarda
+        an'anaviy CSS yondashuvi yaxshiroq natija berishi mumkin.</p>
+
+        <p>Har qanday texnologiya kabi, Tailwind CSS ham universal yechim emas. Uni to'g'ri
+        kontekstda va kerakli joyda ishlatish orqali eng yaxshi natijaga erishish mumkin.</p>
+      </div>
+    `
+  },
+
 ];
