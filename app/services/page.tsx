@@ -27,10 +27,10 @@ export default function ServicesPage() {
 
         <div className="mt-16 bg-muted/50 rounded-lg p-6 md:p-8">
           <div className="flex flex-col items-center text-center space-y-4 mb-6">
-            <h2 className="text-2xl font-bold">Custom Project Requirements?</h2>
+            <h2 className="text-2xl font-bold">Maxsus loyiha talablari?</h2>
             <p className="text-muted-foreground max-w-[700px]">
-              Need something specific or have a complex project in mind? Contact me for a personalized quote tailored to
-              your exact requirements.
+              Aniq bir narsa kerakmi yoki murakkab loyiha rejangiz bormi? Ehtiyojingizga qarab maxsus narx taklifi olish
+              uchun men bilan bog'laning.
             </p>
           </div>
           <div className="flex justify-center">
@@ -38,7 +38,7 @@ export default function ServicesPage() {
               href="/contact"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 gradient-bg"
             >
-              Get Custom Quote
+              Maxsus narx olish
             </a>
           </div>
         </div>

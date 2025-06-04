@@ -40,7 +40,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
       </CardContent>
       <CardFooter>
         <Button asChild className="w-full">
-          <Link href="/contact">Get Started</Link>
+          <Link href="/contact">Buyurtma berish</Link>
         </Button>
       </CardFooter>
     </Card>
