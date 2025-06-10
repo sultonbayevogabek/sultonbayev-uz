@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     shaxsiy sayt yasash, portfolio sayt tayyorlash, landing page yaratish,
     internet magazin yasash, mobilga mos sayt, adaptiv sayt, tezkor sayt tayyorlash, veb dizayn,
     dizayn xizmatlari, html css javascript, veb dasturchi, freelance dasturchi, arzon sayt yasash,
-    professional saytlar, blog sayt tayyorlash, korxona uchun sayt, xizmatlar sayti, onlayn do‘kon yaratish,
+    professional saytlar, blog sayt tayyorlash, korxona uchun sayt, xizmatlar sayti, onlayn do'kon yaratish,
      figma dizayn asosida sayt, domen ulash, hosting sozlash, web developer xizmatlari,
      SEO xizmatlari, saytga SEO qilish, sayt optimizatsiyasi, mobil versiya sayt,
-     O‘zbekistonda sayt yasash, Toshkentda sayt yaratish, web portfolio yaratish,
-     O‘zbek dasturchi, Toshkent front-end dasturchi, saytga chat qo‘shish,
+     O'zbekistonda sayt yasash, Toshkentda sayt yaratish, web portfolio yaratish,
+     O'zbek dasturchi, Toshkent front-end dasturchi, saytga chat qo'shish,
      telegram bot yasash, fast loading saytlar, veb xizmatlar, saytlarni yangilash,
      foydalanuvchiga qulay sayt, foydalanuvchi interfeysi dizayni, UI UX xizmatlari,
-     figmadan saytga o‘tkazish, yagona sahifali saytlar, ko‘p sahifali saytlar,
+     figmadan saytga o'tkazish, yagona sahifali saytlar, ko'p sahifali saytlar,
      landing sahifa yaratish, tezkor buyurtma, saytni yangilash xizmati,
      создание сайтов, заказать сайт, разработка сайта под ключ, фронтенд разработчик,
       адаптивный сайт, создание лендинга, интернет магазин под ключ, персональный сайт,
@@ -69,7 +69,33 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="uz" suppressHydrationWarning>
+      <head>
+        {/* BreadcrumbList va Sitelinks Searchbox structured data */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://sultonbayev.uz/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://sultonbayev.uz/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          },
+          "name": "Sultonbayev.uz"
+        }`}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Loyihalar", "item": "https://sultonbayev.uz/portfolio" },
+            { "@type": "ListItem", "position": 2, "name": "Aloqa", "item": "https://sultonbayev.uz/contact" },
+            { "@type": "ListItem", "position": 3, "name": "Xizmatlar", "item": "https://sultonbayev.uz/services" },
+            { "@type": "ListItem", "position": 4, "name": "Blog", "item": "https://sultonbayev.uz/blog" }
+          ]
+        }`}} />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
