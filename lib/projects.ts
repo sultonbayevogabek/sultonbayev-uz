@@ -591,5 +591,29 @@ export const projects: Project[] = [
       `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
+  },
+  {
+    id: 25,
+    title: 'Elshod Umarov',
+    slug: 'elshod-umarov-nordicuniversity-org',
+    description: `
+      elshod-umarov.nordicuniversity.org - Elshod Umarovning "Tanlovda adashmaslik formulasi" nomline online,
+      yopiq vebinari uchun qilingan vebinar-sayt. Saytning desktop va mobil versiyalari qilingan.
+      Rasmlar va saytdagi boshqa mayda elementlar sal ko'p bo'lishiga qaramay, performans 100% chiqdi.
+    `,
+    image: '/portfolio/elshod-umarov-nordicuniversity-org.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://elshod-umarov.netlify.app',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
   }
 ];
