@@ -597,7 +597,8 @@ export const projects: Project[] = [
     title: 'Elshod Umarov',
     slug: 'elshod-umarov-nordicuniversity-org',
     description: `
-      elshod-umarov.nordicuniversity.org - Elshod Umarovning "Tanlovda adashmaslik formulasi" nomline online,
+      elshod-umarov.nordicuniversity.org - Xalqaro Nordik Unubersiteti Iqtisodiyot va pedagogika fakulteti dekani
+      Elshod Umarovning "Tanlovda adashmaslik formulasi" nomline online,
       yopiq vebinari uchun qilingan vebinar-sayt. Saytning desktop va mobil versiyalari qilingan.
       Rasmlar va saytdagi boshqa mayda elementlar sal ko'p bo'lishiga qaramay, performans 100% chiqdi.
     `,
