@@ -616,5 +616,30 @@ export const projects: Project[] = [
       `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
+  },
+  {
+    id: 25,
+    title: 'Turkiston Buildings',
+    slug: 'turkiston-buildings-vebinarr-uz',
+    description: `
+      Buxorodagi "Turkiston Buildings" qurilish kompaniyasining onlayn taqdimoti uchun qilingan vebinar sayt.
+      Sayt faqat bitta sahifadan iborat. Instagram reklamadan saytga kirgan foydalanuvchi "Taqdimotda qatnashish" tugmasini bosib telegram kanalga qo'shilib oladi. <br>
+      Sayt dizaynini ham o'zingiz qilib bering, faqat o'zingiz orqali ishni bitirsak yaxshi bo'lardi deyishganiga o'zimcha qilib ko'rdim boshida, lekin men o'zim qilgan dizayn unchalik
+      "yemadi". Tanish dizaynerimdan yordam olishimga to'g'ri keldi. Dizayner umumiy stilistikani fon rasmiga moslab chizib berdi. Natija yomon emas.
+    `,
+    image: '/portfolio/turkiston-buildings-vebinarr-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://turkiston-buildings.vebinarr.uz',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
   }
 ];
