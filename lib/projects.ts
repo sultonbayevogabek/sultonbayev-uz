@@ -618,7 +618,7 @@ export const projects: Project[] = [
     type: 'Vebinar sayt'
   },
   {
-    id: 25,
+    id: 26,
     title: 'Turkiston Buildings',
     slug: 'turkiston-buildings-vebinarr-uz',
     description: `
