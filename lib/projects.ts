@@ -628,7 +628,7 @@ export const projects: Project[] = [
       "yemadi". Tanish dizaynerimdan yordam olishimga to'g'ri keldi. Dizayner umumiy stilistikani fon rasmiga moslab chizib berdi. Natija yomon emas.
     `,
     image: '/portfolio/turkiston-buildings-vebinarr-uz.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    technologies: [ 'HTML', 'Tailwind CSS' ],
     demoUrl: 'https://turkiston-buildings.vebinarr.uz',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
