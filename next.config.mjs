@@ -27,7 +27,7 @@ const nextConfig = {
     optimizeCss: true,
   },
   env: {
-    API_URL: 'https://bot.farruhzoir.uz/api'
+    API_URL: 'https://bot.sultonbayev.uz/api'
   }
 }
 
