@@ -27,7 +27,7 @@ const nextConfig = {
     optimizeCss: true,
   },
   env: {
-    API_URL: 'bot-sultonbayev-uz-3f68db133740.herokuapp.com/api'
+    API_URL: 'https://bot-sultonbayev-uz-3f68db133740.herokuapp.com/api'
   }
 }
 
