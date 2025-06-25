@@ -641,5 +641,30 @@ export const projects: Project[] = [
       `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
     type: 'Vebinar sayt'
-  }
+  },
+  {
+    id: 27,
+    title: 'Ozoda Isxakova',
+    slug: 'ozoda-isxakova-uz',
+    description: `
+      Uzoq yillik tajribaga ega dizayner Ozoda Isxakovaning intensivi uchun qilingan vebinar-sayt. Oldin qilgan saytlardan foydalangan holda veb-dizaynsiz  qilib berdim. Ranglarni qanday tanlashni Claude AI bilan maslahat qildik. Sun'iy intellekt bergan ranglardan foydalandim. Natija yomonmas ).
+      <br>
+      Shuningdek saytning yuklanish tezligi ham juda zo'r. FCP - 0.8s. Bu degani saytga kirgan odamga 0.8 sekund ichida sayt elementlari to'liq chizib ko'rsatiladi.
+
+    `,
+    image: '/portfolio/ozoda-isxakova-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://ozoda-isxakova.netlify.app',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
