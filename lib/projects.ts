@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description: `
       sarbon-edu.uz va sarbon-taqdimot.uz - Sarbon Universitetining taqdimot reklamasi uchun qilingan vebinar saytlar.
       <br>
-      2 xil dizaynda qilindi. Konversiya qaysinda yaxshi chiqsa shu sayt reklamaning oxirigacha ishlatiladi. Ikkala saytda ham faqat mobil versiyasi qilindi. Hamma ko'rsatkichlar 100% ishlab turibdi. FCP - 0.8 sekund.
+      2 xil dizaynda qilindi. Konversiya qaysi birida yaxshi chiqsa shu sayt reklamaning oxirigacha ishlatiladi. Ikkala saytda ham faqat mobil versiyasi qilindi. Hamma ko'rsatkichlar 100% ishlab turibdi. FCP - 0.8 sekund.
     `,
     image: '/portfolio/sarbon-universiteti.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
