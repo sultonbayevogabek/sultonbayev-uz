@@ -37,6 +37,7 @@ export default function PortfolioPage() {
           projectTypes={allProjectTypes}
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
+          projects={projects} // loyihalar massivini uzatish
         />
 
         {filteredProjects.length > 0 ? (
