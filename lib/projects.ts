@@ -148,6 +148,30 @@ export const projects: Project[] = [
     type: 'Internet do\'kon'
   },
   {
+    id: 28,
+    title: 'Sarbon Universiteti',
+    slug: 'sarbon-universiteti',
+    description: `
+      sarbon-edu.uz va sarbon-taqdimot.uz - Sarbon Universitetining taqdimot reklamasi uchun qilingan vebinar saytlar.
+      <br>
+      2 xil dizaynda qilindi. Konversiya qaysinda yaxshi chiqsa shu sayt reklamaning oxirigacha ishlatiladi. Ikkala saytda ham faqat mobil versiyasi qilindi. Hamma ko'rsatkichlar 100% ishlab turibdi. FCP - 0.8 sekund.
+    `,
+    image: '/portfolio/sarbon-universiteti.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://sarbon-edu-uz.netlify.app/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
+  {
     id: 9,
     title: 'Dildora Tursunova',
     slug: 'dildora-tursunova-dynamics-market-uz',
@@ -655,30 +679,6 @@ export const projects: Project[] = [
     image: '/portfolio/ozoda-isxakova-uz.jpg',
     technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
     demoUrl: 'https://ozoda-isxakova.netlify.app',
-    features: [
-      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
-      `Ro'yxatdan o'tish formasi`,
-      `Foydalanuvchilar ma'lumotlarini yig'ish`,
-      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
-      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
-      `Kam trafik sarflagan holda tezkor yuklanish`,
-      `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
-    ],
-    type: 'Vebinar sayt'
-  },
-  {
-    id: 28,
-    title: 'Sarbon Universiteti',
-    slug: 'sarbon-universiteti',
-    description: `
-      sarbon-edu.uz va sarbon-taqdimot.uz - Sarbon Universitetining taqdimot reklamasi uchun qilingan vebinar saytlar.
-      <br>
-      2 xil dizaynda qilindi. Konversiya qaysinda yaxshi chiqsa shu sayt reklamaning oxirigacha ishlatiladi. Ikkala saytda ham faqat mobil versiyasi qilindi. Hamma ko'rsatkichlar 100% ishlab turibdi. FCP - 0.8 sekund.
-    `,
-    image: '/portfolio/sarbon-universiteti.jpg',
-    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
-    demoUrl: 'https://sarbon-edu-uz.netlify.app/',
     features: [
       `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
       `Ro'yxatdan o'tish formasi`,
