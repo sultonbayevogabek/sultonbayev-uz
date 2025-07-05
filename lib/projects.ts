@@ -691,4 +691,28 @@ export const projects: Project[] = [
     ],
     type: 'Vebinar sayt'
   },
+  {
+    id: 29,
+    title: `Mehruza G'ulomova`,
+    slug: 'mehruza-gulomova',
+    description: `
+      8 yillik tajribaga ega dublyaj aktrisasi Mehruza G'ulomovaning "Chiroyli ovoz sirlari" deb nomlangan onlayn masterklassi uchun qilingan sayt. <br>
+
+      Vebinar tashkilotchilari oldin qilingan bitta <a href="https://vebinar-dynamics-market.netlify.app">sayt</a>da Visit rate 80%, Lead rate 70% bo'lgandi deb yana xuddi shu saytning strukturasi bilan bir xil qildirishdi.
+    `,
+    image: '/portfolio/mehruza-gulomova.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://mehruza-gulomova.netlify.app',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
