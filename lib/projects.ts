@@ -578,7 +578,7 @@ export const projects: Project[] = [
     title: 'Farhod Ruzmatov',
     slug: 'uzumone-netlify-app',
     description: `
-      Cosmos brendi asoschi, Uzum marketning rasmiy spikeri Farhod aka Ruzmatovning online darslari
+      Cosmos brendi asoschi, Uzum marketning rasmiy spikeri Farhod Ruzmatovning online darslari
       reklamasi uchun qilingan vebinar sayti. Saytda dizayner Uzum marketning stilistikasidan ajoyib ko'rinishda foydalangan.
     `,
     image: '/portfolio/uzumone-netlify-app.jpg',
