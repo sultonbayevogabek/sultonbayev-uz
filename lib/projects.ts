@@ -715,4 +715,26 @@ export const projects: Project[] = [
     ],
     type: 'Vebinar sayt'
   },
+  {
+    id: 30,
+    title: `Asror Iskandarov`,
+    slug: 'asror-iskandarov-predzapis',
+    description: `
+      Asror Iskandarovning "Shaxsiy brendni 0 dan samarali qurish" nomli kursiga ro'yxatdan o'tish uchun forma sayt. Kursga yoziladigan odamlar qaysi trafikdan kelganini bilish uchun sayt qildirishdi. Google Forms bilan ham buni qilsa bo'lardi, lekin kelgan odam Instagramdan keldimi, Youtubedan keldimi bila olishmaydi.
+      <br>
+      Saytdagi ma'lumotlar to'ldirib jo'natilgach Bitrixga yoziladigan qilindi. Bu ham qo'shimcha tajriba bo'ldi menga, chunki oldin faqat AmoCRM bilan integratsiya qilib berardim. Bitrixda nisbatan osonroq bo'ldi forma ma'lumolarini jo'natish.
+    `,
+    image: '/portfolio/asror-iskandarov-predzapis.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://asror-iskandarov-forma.netlify.app',
+    features: [
+      `Kursga yozilish uchun forma`,
+      `Bitrix bilan integratsiya`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
