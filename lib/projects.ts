@@ -7,7 +7,7 @@ export interface Project {
   technologies: string[];
   demoUrl?: string;
   features: string[];
-  type: 'Vebinar sayt' | 'Landing sayt' | 'Hujjat aylanish tizimi' | `Internet do'kon` | 'Onlayn xizmat';
+  type: 'Vebinar sayt' | 'Landing sayt' | 'Hujjat aylanish tizimi' | `Internet do'kon` | 'Onlayn xizmat' | 'Forma sayt';
 }
 
 export const projects: Project[] = [
@@ -735,6 +735,67 @@ export const projects: Project[] = [
       `Zamonaviy va chiroyli dizayn`,
       `Mobil qurilmalarga moslashtirilgan dizayn`
     ],
-    type: 'Vebinar sayt'
+    type: 'Forma sayt'
+  },
+  {
+    id: 31,
+    title: `Lingua Barno kursiga to'lov`,
+    slug: 'lingua-barno-payment',
+    description: `
+      LinguaBarnoning "Upgrade 4.0" kursi taqdimotining oxirida to'lov ochilgandan keyin, kursda qatnashmoqchi bo'lganlar joy band qilish uchun to'lov qilib, to'lovni tasdiqlovchi skrinshotlarni yuklaydigan forma sayt.
+      <br>
+      Formani boshqarish osonroq bo'lishi uchun Angularda ko'tardim. Rasmlarni yuklash uchun NodeJS yordamida mini backend ko'tardim. Katta yuklamada ham qotmasdan yaxshi ishlab berdi.
+    `,
+    image: '/portfolio/linguabarno-payment.jpg',
+    technologies: [ 'Angular', 'Tailwind CSS', 'NodeJS', 'NestJS' ],
+    demoUrl: 'https://linguabarno-payments.netlify.app',
+    features: [
+      `Kursga yozilish uchun forma`,
+      `To'lov skrinshotini yuklash`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Forma sayt'
+  },
+  {
+    id: 32,
+    title: `Nordik Universtitetiga qabul uchun forma`,
+    slug: 'nordik-qabul-forma',
+    description: `
+      Nordik Universtitetiga qabul uchun forma sayt. Universitetda o'qimoqchi bo'lganlar saytga kirib, ariza qoldiradi. Formada yuborilgan ma'lumotlar Bitrix CRM ga yoziladi.
+    `,
+    image: '/portfolio/nordik-qabul.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://nordik-qabul.netlify.app',
+    features: [
+      `Kursga yozilish uchun forma`,
+      `To'lov skrinshotini yuklash`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `Bitrix bilan integratsiya`
+    ],
+    type: 'Forma sayt'
+  },
+  {
+    id: 32,
+    title: `Sarbon Universtitetiga qabul uchun forma`,
+    slug: 'sarbon-qabul-forma',
+    description: `
+      Sarbon Universtitetiga qabul uchun forma sayt. Universitetda o'qimoqchi bo'lganlar saytga kirib, ariza qoldiradi. Formada yuborilgan ma'lumotlar Amo CRM ga yoziladi.
+    `,
+    image: '/portfolio/sarbon-edu-qabul.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://sarbon-qabul.netlify.app',
+    features: [
+      `Kursga yozilish uchun forma`,
+      `To'lov skrinshotini yuklash`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `Amo CRM bilan integratsiya`
+    ],
+    type: 'Forma sayt'
   },
 ];
