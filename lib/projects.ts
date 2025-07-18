@@ -779,7 +779,7 @@ export const projects: Project[] = [
     type: 'Forma sayt'
   },
   {
-    id: 32,
+    id: 33,
     title: `Sarbon Universtitetiga qabul uchun forma`,
     slug: 'sarbon-qabul-forma',
     description: `
