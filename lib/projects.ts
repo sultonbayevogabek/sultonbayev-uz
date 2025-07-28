@@ -798,4 +798,28 @@ export const projects: Project[] = [
     ],
     type: 'Forma sayt'
   },
+  {
+    id: 34,
+    title: `Aziza Xolmatova`,
+    slug: 'azizamcollection-uz',
+    description: `
+      Tikuvchi dizayner Aziza Xolmatovaning "Tikuvchilikda 0 dan natijagacha" deb nomlangan 2 kunlik onlayn masterklassi uchun qilingan vebinar-sayt.
+      <br>
+      Bu saytning dizaynini doim birga ishlidigan dizaynerimiz qilmadi. Tashkilotchilarning o'zlarining tanish dizaynerlari qilib berdi. Boshida juda ko'p bezaklar qo'shib yuborilgan edi veb-dizaynda. Ortiqcha bezak va elementlar saytning o'qilishini va foydalanuvchi qurilmasiga yuklanishini qiyinlashtiradi deb maslahat va tavsiyalar berdim. Shundan keyin sodda ko'rinishga keltirib, to'g'irlab berdi dizaynni. Saytda hamma ko'rsatkichlar maksimal holatda ishlab turibdi.
+    `,
+    image: '/portfolio/azizamcollection-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://azizam-collection.netlify.app/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
