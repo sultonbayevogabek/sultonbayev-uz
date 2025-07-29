@@ -823,7 +823,7 @@ export const projects: Project[] = [
     type: 'Vebinar sayt'
   },
   {
-    id: 34,
+    id: 35,
     title: `Akbar Turdiboev`,
     slug: 'masterklass-excelmaktabi-uz',
     description: `
