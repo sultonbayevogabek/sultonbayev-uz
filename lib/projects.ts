@@ -822,4 +822,26 @@ export const projects: Project[] = [
     ],
     type: 'Vebinar sayt'
   },
+  {
+    id: 34,
+    title: `Akbar Turdiboev`,
+    slug: 'masterklass-excelmaktabi-uz',
+    description: `
+      500 dan ortiq o'quvchilarga Excelni o’rgatgan tajribali mutaxassis Akbar Turdiboevning "QANDAY QILIB EXCEL VA GOOGLE SHEETSNI 0 DAN 21 KUN ICHIDA O'RGANISH MUMKIN?" nomli 2 kunlik onlayn masterklassi uchun qilingan vebinar sayti.
+    `,
+    image: '/portfolio/masterklass-excelmaktabi-uz.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://masterklass-akbar.netlify.app',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
