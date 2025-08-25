@@ -844,4 +844,26 @@ export const projects: Project[] = [
     ],
     type: 'Vebinar sayt'
   },
+  {
+    id: 36,
+    title: `Siroj Saidmuratov`,
+    slug: 'siroj-saidmuratov',
+    description: `
+      Marketolog Siroj Saidmuratovning "Marketing haqida hamma biladigan sirlar" nomli 2 kunlik vebinari uchun qilingan sayt.
+    `,
+    image: '/portfolio/siroj-saidmurotov.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://sirojsaidmurotov.zapusks.uz/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
