@@ -866,4 +866,26 @@ export const projects: Project[] = [
     ],
     type: 'Vebinar sayt'
   },
+  {
+    id: 37,
+    title: `Foniya Kubro`,
+    slug: 'foniya-kubro',
+    description: `
+      Youtuber Xadicha Dilshodovnaning "Youtube'da 0 dan 1000$ daromadgacha" nomli bepul masterklassi uchun qilingan vebinar sayti.
+    `,
+    image: '/portfolio/foniya-kubro.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://foniyakubro.netlify.app/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
