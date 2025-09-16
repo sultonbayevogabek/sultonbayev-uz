@@ -527,7 +527,9 @@ export const projects: Project[] = [
       `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
       `Kam trafik sarflagan holda tezkor yuklanish`,
       `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 99.6%`,
+      '📊Lead rate - 71%'
     ],
     type: 'Vebinar sayt'
   },
@@ -840,7 +842,9 @@ export const projects: Project[] = [
       `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
       `Kam trafik sarflagan holda tezkor yuklanish`,
       `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 81%`,
+      '📊Lead rate - 63%'
     ],
     type: 'Vebinar sayt'
   },
@@ -862,7 +866,9 @@ export const projects: Project[] = [
       `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
       `Kam trafik sarflagan holda tezkor yuklanish`,
       `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 96%`,
+      '📊Lead rate - 52%'
     ],
     type: 'Vebinar sayt'
   },
@@ -884,7 +890,57 @@ export const projects: Project[] = [
       `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
       `Kam trafik sarflagan holda tezkor yuklanish`,
       `Zamonaviy va chiroyli dizayn`,
-      `Mobil qurilmalarga moslashtirilgan dizayn`
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 93%`,
+      '📊Lead rate - 58%'
+    ],
+    type: 'Vebinar sayt'
+  },
+  {
+    id: 38,
+    title: `Oybek Bozorov`,
+    slug: 'oybek-bozorov',
+    description: `
+      YouTuber Oybek Bozorovning vebinari uchun qilingan sayt. Oldingi zapusk loyihalarida Tildada qilingan saytdan foydalanishgan ekan. Visit rate 78% ishlagan ekan. Kodda qilingan saytimizda ko'rsatkichlar ancha yaxshilangan.
+    `,
+    image: '/portfolio/oybek-bozorov.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://oybekbozorov.uz/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 87%`,
+      '📊Lead rate - 56%'
+    ],
+    type: 'Vebinar sayt'
+  },
+  {
+    id: 39,
+    title: `Xabibullo Xalimovich`,
+    slug: 'xabibullo-xalimovich',
+    description: `
+      Rus tili o'qituvchisi Xabibullo Xalimovichning "RUS TILIDA 0 DAN RAVON GAPIRISHGACHA" nomli onlayn darsi uchun qilib berilgan sayt.
+    `,
+    image: '/portfolio/xabibullo-xalimovich.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://xabibulloxalimovich.uz/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 86%`,
+      '📊Lead rate - 50%'
     ],
     type: 'Vebinar sayt'
   },
