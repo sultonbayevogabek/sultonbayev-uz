@@ -944,4 +944,28 @@ export const projects: Project[] = [
     ],
     type: 'Vebinar sayt'
   },
+  {
+    id: 40,
+    title: `BM Group`,
+    slug: 'bm-group',
+    description: `
+      "BM Group" qurilish kompaniyasining taqdimoti uchun qilib berilgan sayt
+    `,
+    image: '/portfolio/bm-group.jpg',
+    technologies: [ 'HTML', 'Tailwind CSS', 'JavaScript' ],
+    demoUrl: 'https://bmgroup-webinar.uz/',
+    features: [
+      `Instagramda reklama qilinayotgan kurs haqida ma'lumot`,
+      `Ro'yxatdan o'tish formasi`,
+      `Foydalanuvchilar ma'lumotlarini yig'ish`,
+      `Ma'lumotlarini qoldirgan foydalanuvchilar uchun "Thank you" sahifasi`,
+      `Foydalanuvchini yopiq telegram kanalga yo'naltirish`,
+      `Kam trafik sarflagan holda tezkor yuklanish`,
+      `Zamonaviy va chiroyli dizayn`,
+      `Mobil qurilmalarga moslashtirilgan dizayn`,
+      `⚡️Visit rate - 86%`,
+      '📊Lead rate - 51%'
+    ],
+    type: 'Vebinar sayt'
+  },
 ];
